@@ -1,0 +1,21 @@
+#### How to use git notes Dec 5, 2017
+
+#### commands:
+
+git init 
+
+git status
+
+git add <filename>
+- or -
+git add .
+- or - 
+git -A
+
+git commit -m "message about changes"
+
+git push
+
+git pull
+
+
