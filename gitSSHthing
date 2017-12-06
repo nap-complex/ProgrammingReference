@@ -1,0 +1,17 @@
+# How to do the ssh thing:
+
+goto .ssh folder
+
+type: $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+hit enter to save in current file
+
+make a passphrase, write it down in the ssh folder with a note for what it is for
+
+copy pub key to github, or where ever
+
+copy github ssh adress for your repository
+
+goto to github folder and git to the copied address, it should ask for a password, but what it wants in the pass phrase
+
+
