@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Port Everglades Webcam - A Fort Lauderdale Cruise Ship Web Cam</title>
+		<meta charset="UTF-8">
+    <meta name="description" content="Port Everglades Webcam in Fort Lauderdale, Florida. The original and number one web cam window into daily life at Port Everglades! Watch cruise ships, freighters, mega-yachts and sailboats or just checkout the weather. Always something new to see.">
+    <meta name="keywords" content="cruise, cruising, cruise ship, port everglades, webcam, web cam, fort lauderdale, florida, weather, hurricane, tropical storm, caribbean, royal caribbean, oasis of the seas, allure of the seas, princess, holland america, carnival, silversea, regent, costa, celebrity, seabourn, yachts, sailboats, boats, tankers, freighters">
+		<meta name="application-name" content="Port Everglades Webcam">		
+		<meta property="og:image" content="images/pew_preview.jpg">
+		<meta property="og:title" content="Port Everglades Webcam - Live Streaming Video from PTZtv">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Live Webcam">
+    <link rel="icon" type="image/png" href="http://www.portevergladeswebcam.com/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://www.portevergladeswebcam.com/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="http://www.portevergladeswebcam.com/favicon-16x16.png" sizes="16x16">					
+		<link rel="image_src" type="image/jpg" href="http://www.portevergladeswebcam.com/images/pew_preview.jpg">
+		<link rel="canonical" href="1_HTML_files/a_004.html">
+		<meta name="viewport" content="width=1204">
+		<script async="" type="text/javascript" src="1_HTML_files/v2_010.js"></script><script async="" type="text/javascript" src="1_HTML_files/v2_007.js"></script><script async="" type="text/javascript" src="1_HTML_files/v2_006.js"></script><script async="" type="text/javascript" src="1_HTML_files/v2_005.js"></script><script async="" type="text/javascript" src="1_HTML_files/v2_002.js"></script><script async="" type="text/javascript" src="1_HTML_files/v2_009.js"></script><script async="" type="text/javascript" src="1_HTML_files/v2_004.js"></script><script async="" type="text/javascript" src="1_HTML_files/v2_008.js"></script><script async="" type="text/javascript" src="1_HTML_files/v2_003.js"></script><script async="" type="text/javascript" src="1_HTML_files/v2.js"></script><script src="1_HTML_files/ca-pub-4810494881468391.js"></script><script id="twitter-wjs" src="1_HTML_files/widgets.js"></script><script src="1_HTML_files/cbgapi.loaded_1" async=""></script><script src="1_HTML_files/cbgapi.loaded_0" async=""></script><script async="" src="1_HTML_files/analytics.js"></script><script type="text/javascript" src="1_HTML_files/block.js"></script>
+	
+		<link rel="stylesheet" href="1_HTML_files/skin.css">
+		<link rel="stylesheet" href="1_HTML_files/flowplayer.css">
+		<script src="1_HTML_files/flowplayer_002.js"></script>
+		<script src="1_HTML_files/flowplayer.js"></script>
+		<script src="1_HTML_files/flowplayer_003.js"></script>		
+		<script src="1_HTML_files/plusone.js" async="" defer="defer" gapi_processed="true"></script>
+		<script src="1_HTML_files/ptztv.js"></script>
+		<link rel="stylesheet" type="text/css" href="1_HTML_files/ptztv.css">
+    <style type="text/css">		
+		html { background-color:#1C3B62; }		
+    @media (min-device-width: 1280px) {
+    			html {background:url(http://cdn.portevergladeswebcam.com/images/home_bg_blue.jpg) no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+    }
+    #videoplayer_1 { 
+		      background-image: url('http://cdn.portevergladeswebcam.com/slideshow/welcome_splash.png');
+		}	
+		</style>		
+	  <script>
+		var failOverDelayValue = 4000;
+    var okayToPlay = true;
+
+    var userPlatform = navigator.platform;				 
+    var userAgent = navigator.userAgent;
+		var WinMac    = isWindowsNTorMac( userAgent );
+    var GoogleTV  = isGoogleTV( userAgent );
+    var SmartTV   = isSmartTV( userAgent );
+    var Android   = isAndroidDevice( userAgent );
+    var Apple     = isAppleiDevice( userAgent );
+
+    		var IE9orLower = false;
+    								
+		var fp_key          = '$132095379616692';
+		
+		var video_1_api     = '';
+		var audio_1_api     = '';
+		var audio_2_api     = '';
+		
+	  var stream_mode     = 'html5';
+	  var stream_prefix   = '';
+		var site_domain     = 'portevergladeswebcam.com';
+	  var webcam_stream          = 'hdtv.stream';
+		var webcam_stream_suffix   = '?PTZtkendtime=1516487447&PTZtkhash=S6tkmhtimarirvkb30i8k5w73L9gFyit9o24If_-5RU=';
+	  var stream_provider = 'ptztv';
+		var audio_embed     = false;	
+					
+	  var audio_stream_1          = 'pewsound1.stream';
+		var audio_stream_1_suffix   = '?PTZtkendtime=1516487447&PTZtkhash=dheFHu1uDcOWojCWgovL-dKvZK1pjJ1PoVSfjnOKisw=';
+		var a1_type         = 'MIC';
+		var a1_live         = true;
+		var a1_provider     = 'ptztv';		
+
+	  var audio_stream_2          = 'pewsound2.stream';
+		var audio_stream_2_suffix   = '?PTZtkendtime=1516487447&PTZtkhash=kjdZhnxLfAJqEAYhv8Ai0GHkUSYRKvUHWT6s1znzxT0=';
+		var a2_type         = 'VHF';
+		var a2_live         = true;
+		var a2_provider     = 'ptztv';	
+				
+		var adLeftLen    = 900;
+		var adRightLen   = 900;
+		var adBottomLen  = 500;
+		
+		var sovrnAdTag1  = "286951"; // 160x600
+		var sovrnAdTag2  = "286948"; // 728x90
+			 
+	  // Set server
+	  var serverName   = "mia10-1.portfever.com";
+	  var rtmpApp      = "liveedge";
+	  var hlsApp       = "liveedge";
+	  var targetServer = "rtmp://" + serverName + "/" + rtmpApp;
+	 					 					 
+	  // Init viewer count source
+    var pewViewerCount  = "pew_visitors.txt";
+    var seeViewerCount  = pewViewerCount;
+	  var viewerCountUpdateInterval = 300000;
+
+		// player timeout init
+		var sessionTimeout = ( 1516487447 * 1000 ) - Math.round((new Date()).getTime());
+    var webcamTimeout = 30 * 60 * 1000;			
+    var timeoutID = null;
+    var timeoutPending = false;
+		
+		// header
+		var num_banner_images = 1;
+
+    </script>
+				
+		<script type="text/javascript">
+			
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+        ga('create', 'UA-24373193-3', 'auto');
+        ga('send', 'pageview');
+
+    </script><script async="" src="1_HTML_files/cast_sender.js"></script>		
+  <link rel="preload" href="1_HTML_files/integrator.js" as="script"><script type="text/javascript" src="1_HTML_files/integrator.js"></script><script type="text/javascript" charset="utf-8" async="" src="1_HTML_files/timeline.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script><script src="1_HTML_files/ids.js"></script></head>
+  <body onbeforeunload="javascript:reset_webcam_list()" onload="javascript:loadCheck()">
+	<div id="mbox" class="message-box">
+		 <div id="message_1" class="message-box-content-1"></div>
+		 <div id="message_2" class="message-box-content-2"></div>		 
+  </div>
+  <div id="root">
+    <div class="head-box">
+		    <img id="headimg" src="1_HTML_files/site_banner_1.jpg" data-img-num="1" alt="Port Everglades Webcam">
+  			<div id="siteselectdiv">
+             <select id="sspulldown" onchange="javascript:siteSelectLaunch(this);">
+                  <option id="first_option" selected="selected" value="http://www.portevergladeswebcam.com">Watch another webcam...</option>			
+                  <option value="Preview">What's on PTZtv</option>
+                  <option value="http://www.PortFever.com/?pew">Snapshot Archive</option>
+                  <option value="http://www.FtLauderdaleWebcam.com">Fort Lauderdale</option>
+                  <option value="http://www.FtLauderdaleBeachCam.com">Marriott FLL Beach</option>
+                  <option value="http://www.HiltonBeachCam.com">Hilton FLL Beach</option>
+                  <option value="http://www.PompanoBeachCam.com">Pompano Beach</option>
+                  <option value="http://www.PortMiamiWebcam.com">Port Miami</option>
+                  <option value="http://www.MiamiAirportCam.com">Miami Airport</option>
+                  <option value="http://www.KeyWestHarborWebcam.com">Key West Harbor</option>
+                  <option value="http://www.PortTampaWebcam.com">Port Tampa</option>
+                  <option value="http://www.PortNassauWebcam.com">Port Nassau</option>
+                  <option value="http://www.PortStMaartenWebcam.com">Port St. Maarten</option>
+                  <option value="http://www.MahoBeachCam.com">Maho Beach Cam</option>
+                  <option value="http://www.PortArubaWebcam.com">Port Aruba</option>
+                  <option value="http://www.PortBermudaWebcam.com">Port Bermuda</option>
+                  <option value="http://www.PortCanaveralWebcam.com">Port Canaveral</option>
+                  <option value="http://www.AtlanticCityWebcam.com">Atlantic City</option>
+                  <option value="http://www.NJWildlifeCam.com">New Jersey Wildlife</option>
+                  <option value="http://www.NYHarborWebcam.com">New York Harbor</option>
+                  <option value="http://www.PortNYWebcam.com">Port New York</option>
+                  <option value="http://www.JuneauHarborWebcam.com">Juneau Harbor</option>									
+                  <option value="http://www.MorganHillWebcam.com">California</option>
+                  <option value="http://www.KittyCatCam.com">Kitty Cat Cam</option>
+             </select>
+  			</div>
+  			<div id="socialdiv">
+						 <span class="help-vert-align"></span>
+  			     <a href="http://www.facebook.com/Port.Everglades.Webcam" target="_blank"><img src="1_HTML_files/FindUsonFacebook.png" alt="Find Us on Facebook" height="18"></a>
+  					 <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2FPort.Everglades.Webcam&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=verdana&amp;height=20" scrolling="no" style="border:none; overflow:hidden; width:90px; height:20px;" frameborder="0"></iframe>
+						 <div style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 32px; height: 20px;" id="___plusone_0"><iframe ng-non-bindable="" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 32px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" id="I0_1516482048203" name="I0_1516482048203" src="1_HTML_files/fastbutton.html" data-gapiattached="true" title="G+" width="100%" frameborder="0"></iframe></div>						 
+      	</div>
+				<div class="info-bar">
+    				<div class="info-left">
+								<a href="https://www.facebook.com/PTZtv/" target="_blank">Sail-Away Lineup</a>	
+    				</div>
+    			  <div class="info-center">
+    					  Enjoy all PTZtv webcams full-screen &amp; ad-free on your TV with <a href="http://ptztvpremium.com/" target="_blank">PTZtv Premium</a> - learn more <a href="http://ptztv.com/premium/" target="_blank">here</a>
+        	  </div>
+    				<div class="info-right">
+								<a href="https://pevvesseltraffic.broward.org/webx/" target="_blank">Port Schedule</a>						
+    				</div>
+    		</div>
+		</div>
+		<div class="col-container back-white">
+    		<div class="left-col back-white">
+    			<div id="adskyleftdiv" class="ad160x600">
+              <!-- PEW Sky Left -->
+              <style type="text/css">
+							.adslotleft { display:inline-block;width:160px;height:600px; }
+							@media (max-device-width:1024px) and (orientation:portrait) { .adslotleft { display:none; } }							
+							@media (min-device-width:1025px) and (max-device-width:1279px) and (orientation:portrait) { .adslotleft { display:inline-block; } }
+							@media (min-device-width: 1280px), (orientation:landscape) { .adslotleft { display:inline-block; } }
+              </style>							
+              <ins class="adsbygoogle adslotleft" data-ad-client="ca-pub-4810494881468391" data-ad-slot="1316058568" data-adsbygoogle-status="done" style="width: 160px; height: 600px;"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:160px;height:600px;" width="160" height="600" frameborder="0"></iframe></ins></ins></ins>
+              <script async="" src="1_HTML_files/adsbygoogle.js"></script>
+              <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>							
+        	</div>
+    			<div id="weatherdiv">
+    			 		<span>
+      			      <a href="http://www.wunderground.com/US/FL/Port_Everglades.html?&amp;bannertypeclick=wu_simplewhite" title="Port Everglades Weather Forecast" target="_blank">
+    							    <img id="weatherSticker" src="1_HTML_files/wxBanner.gif" alt="Click for Port Everglades Forecast" width="154" height="90">
+    							</a>
+    					</span>		
+    					<script type="text/javascript">
+    							var weatherUpdateInterval = 300000;
+    
+    							var imageBuffer = new Image();
+    							imageBuffer.onload = weatherSwapImageBuffer;
+    
+    							function weatherUpdateImg() {
+    							    var theDate = new Date();
+    									imageBuffer.src = "http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_simplewhite&airportcode=KFLL&ForcedCity=Port Everglades&ForcedState=FL&language=EN"+ "&" + parseInt(theDate.getTime() / 1000);
+    							}
+    
+    							function weatherSwapImageBuffer() {
+    											 document.getElementById('weatherSticker').src = imageBuffer.src;
+    							}
+    
+    							var weatherUpdateID = setInterval('weatherUpdateImg()', weatherUpdateInterval);
+    				  </script>					
+        	</div>	
+    			<div id="promoboxdiv">
+    					<a href="http://www.porteverglades.net/" target="_blank"><img src="1_HTML_files/PE_Propellor_160x100.jpg" alt="PTZtv" width="160" height="100"></a>
+    			</div>		
+    			<div id="partnerad1div">
+    			    <img usemap="#pewadmap1" src="1_HTML_files/Rodewayfll-EvergladeCam-Ad.jpg" alt="" width="152" height="386">					
+							<map name="pewadmap1">
+					 			  <area shape="rect" coords="0,0,152,193" href="http://www.hotelftlauderdale.net/" target="_blank" alt="Rodeway Inn &amp; Suites Fort Lauderdale Florida">
+					 			  <area shape="rect" coords="0,193,152,386" href="http://www.hotelhollywoodfl.com/" target="_blank" alt="Quality Inn &amp; Suites Hollywood Florida ">							
+							</map>									
+        	</div>
+    		</div>
+    		<div class="center-col back-black">
+    			<div id="webcamnamediv" class="back-black">
+    			    <img id="webcamnameimg" src="1_HTML_files/pew_hdtv_3.png" alt="Port Everglades Webcam">
+    			</div>
+					<br>
+    			<div id="viewersdiv" class="back-black">Viewers: <span id="visitorcounter">495</span></div>
+    			<div id="timendatediv" class="back-black">
+    			    <iframe src="1_HTML_files/ts1.html" width="67" height="16" frameborder="0"></iframe>
+    			</div>
+					<div class="audio-box">
+        			<div id="audioname_1" class="audio-name">MIC</div>
+    					<div id="audioplayer_1" class="audio-control fp-edgy flowplayer fp-default-playlist is-audio-only-7x is-audio-only is-mouseover is-live is-tiny is-ready is-paused" data-flowplayer-instance-id="0" style="height: 62px; margin-top: -30px;"><div class="fp-player"><video class="fp-engine hlsjs-engine" src="blob:http://www.portevergladeswebcam.com/d71bcbbb-b7f1-415f-8e28-a4a70a5a5b88" x-webkit-airplay="allow"></video><div class="fp-ui">                  <div class="fp-header">           <a class="fp-share fp-icon"></a>           <a class="fp-fullscreen fp-icon"></a>           <a class="fp-unload fp-icon"></a>         </div>                                    <div class="fp-controls">            <a class="fp-icon fp-playbtn"></a>            <span class="fp-elapsed">00:00</span>            <div class="fp-timeline fp-bar">               <div class="fp-buffer" style="width: 100%;"></div>               <span class="fp-timestamp"></span>               <div class="fp-progress fp-color"></div>            </div>            <span class="fp-duration">Live</span>            <span class="fp-remaining">Live</span>            <div class="fp-volume">               <a class="fp-icon fp-volumebtn"></a>               <div class="fp-volumebar fp-bar-slider">                 <em class="fp-color"></em><em class="fp-color"></em><em class="fp-color"></em><em class="fp-color"></em><em class="fp-color"></em><em class="fp-color"></em><em class="fp-color"></em>               </div>            </div>                     <strong class="fp-cc fp-hidden">CC</strong></div><div class="fp-menu fp-share-menu"><strong>Share</strong><a class="fp-icon fp-twitter">Twitter</a><a class="fp-icon fp-embed" title="Copy to your site">Embed</a></div><div class="fp-menu fp-subtitle-menu"><strong>Closed Captions</strong><a data-subtitle-index="-1" class="fp-selected">No subtitles</a></div></div><div class="fp-captions"></div></div></div>
+        			<div id="audioname_2" class="audio-name">VHF</div>
+    					<div id="audioplayer_2" class="audio-control fp-edgy flowplayer fp-default-playlist is-audio-only-7x is-audio-only is-mouseover is-live is-tiny is-ready is-paused" data-flowplayer-instance-id="1" style="height: 62px; margin-top: -30px;"><div class="fp-player"><video class="fp-engine hlsjs-engine" src="blob:http://www.portevergladeswebcam.com/ce73dba1-dc07-4d03-9a76-7884e6994453" x-webkit-airplay="allow"></video><div class="fp-ui">                  <div class="fp-header">           <a class="fp-share fp-icon"></a>           <a class="fp-fullscreen fp-icon"></a>           <a class="fp-unload fp-icon"></a>         </div>                                    <div class="fp-controls">            <a class="fp-icon fp-playbtn"></a>            <span class="fp-elapsed">00:00</span>            <div class="fp-timeline fp-bar">               <div class="fp-buffer" style="width: 100%;"></div>               <span class="fp-timestamp"></span>               <div class="fp-progress fp-color"></div>            </div>            <span class="fp-duration">Live</span>            <span class="fp-remaining">Live</span>            <div class="fp-volume">               <a class="fp-icon fp-volumebtn"></a>               <div class="fp-volumebar fp-bar-slider">                 <em class="fp-color"></em><em class="fp-color"></em><em class="fp-color"></em><em class="fp-color"></em><em class="fp-color"></em><em class="fp-color"></em><em class="fp-color"></em>               </div>            </div>                     <strong class="fp-cc fp-hidden">CC</strong></div><div class="fp-menu fp-share-menu"><strong>Share</strong><a class="fp-icon fp-twitter">Twitter</a><a class="fp-icon fp-embed" title="Copy to your site">Embed</a></div><div class="fp-menu fp-subtitle-menu"><strong>Closed Captions</strong><a data-subtitle-index="-1" class="fp-selected">No subtitles</a></div></div><div class="fp-captions"></div></div></div>
+					</div>
+    			<div class="player-box back-black">
+					    <div id="videoplayer_1" class="fp-edgy no-volume flowplayer fp-default-playlist is-live is-ready is-playing is-live-position is-mouseover" data-flowplayer-instance-id="2">
+							    
+	 						<div class="fp-ratio" style="padding-top: 56.25%;"></div><div class="fp-player"><video class="fp-engine hlsjs-engine" src="blob:http://www.portevergladeswebcam.com/490a4d83-3189-47dc-83ca-5c564b33936e" x-webkit-airplay="allow"></video><div class="fp-context-menu fp-menu hide">
+   								    <strong>OPTIONS</strong>
+   										<a href="http://www.ptztv.com/faq/" target="_blank">HELP!</a>
+   								    <a href="http://www.ptztv.com/premium/" target="_blank">PTZtv Premium</a>
+   								    <a href="http://www.ptztv.com/about-us/terms-conditions/" target="_blank">Terms &amp; Conditions</a>
+   								    <a href="http://www.ptztv.com/about-us" target="_blank">More info</a>
+									</div><div class="fp-ui">         <div class="fp-waiting">           <svg class="fp-loading-sharp-outline" width="112px" height="112px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+  <rect x="0" y="0" width="76" height="76" fill="rgba(0,0,0,0)" class="bk"></rect>
+  <rect x="-9" y="-9" width="18" height="18" transform="translate(25 25)" fill="none" stroke="rgba(0,0,0,.5)" stroke-width="3%" class="sq">
+    <animate attributeName="stroke" from="rgba(0,0,0,0)" to="rgba(0,0,0,.5)" repeatCount="indefinite" dur="1.6s" begin="0.0s" values="rgba(0,0,0,.5);rgba(0,0,0,0);rgba(0,0,0,0);rgba(0,0,0,.5);rgba(0,0,0,.5)" keyTimes="0;0.1;0.2;0.4;1"></animate>
+      <animateTransform attributeName="transform" type="scale" additive="sum" from="0.8" to="1" repeatCount="indefinite" begin="0.0s" dur="1.6s" values="1;0.8;0.8;1;1" keyTimes="0;0.1;0.2;0.4;1"></animateTransform>
+  </rect>
+  <rect x="-9" y="-9" width="18" height="18" transform="translate(50 25)" fill="none" stroke="rgba(0,0,0,.5)" stroke-width="3%" class="sq">
+    <animate attributeName="stroke" from="rgba(0,0,0,0)" to="rgba(0,0,0,.5)" repeatCount="indefinite" dur="1.6s" begin="0.4s" values="rgba(0,0,0,.5);rgba(0,0,0,0);rgba(0,0,0,0);rgba(0,0,0,.5);rgba(0,0,0,.5)" keyTimes="0;0.1;0.2;0.4;1"></animate>
+      <animateTransform attributeName="transform" type="scale" additive="sum" from="0.8" to="1" repeatCount="indefinite" begin="0.4s" dur="1.6s" values="1;0.8;0.8;1;1" keyTimes="0;0.1;0.2;0.4;1"></animateTransform>
+  </rect>
+  <rect x="-9" y="-9" width="18" height="18" transform="translate(50 50)" fill="none" stroke="rgba(0,0,0,.5)" stroke-width="3%" class="sq">
+    <animate attributeName="stroke" from="rgba(0,0,0,0)" to="rgba(0,0,0,.5)" repeatCount="indefinite" dur="1.6s" begin="0.8s" values="rgba(0,0,0,.5);rgba(0,0,0,0);rgba(0,0,0,0);rgba(0,0,0,.5);rgba(0,0,0,.5)" keyTimes="0;0.1;0.2;0.4;1"></animate>
+      <animateTransform attributeName="transform" type="scale" additive="sum" from="0.8" to="1" repeatCount="indefinite" begin="0.8s" dur="1.6s" values="1;0.8;0.8;1;1" keyTimes="0;0.1;0.2;0.4;1"></animateTransform>
+  </rect>
+  <rect x="-9" y="-9" width="18" height="18" transform="translate(25 50)" fill="none" stroke="rgba(0,0,0,.5)" stroke-width="3%" class="sq">
+    <animate attributeName="stroke" from="rgba(0,0,0,0)" to="rgba(0,0,0,.5)" repeatCount="indefinite" dur="1.6s" begin="1.2s" values="rgba(0,0,0,.5);rgba(0,0,0,0);rgba(0,0,0,0);rgba(0,0,0,.5);rgba(0,0,0,.5)" keyTimes="0;0.1;0.2;0.4;1"></animate>
+      <animateTransform attributeName="transform" type="scale" additive="sum" from="0.8" to="1" repeatCount="indefinite" begin="1.2s" dur="1.6s" values="1;0.8;0.8;1;1" keyTimes="0;0.1;0.2;0.4;1"></animateTransform>
+  </rect>
+</svg>
+           <svg class="fp-loading-sharp-fill" width="112px" height="112px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+  <rect x="0" y="0" width="76" height="76" fill="rgba(0,0,0,0)" class="bk"></rect>
+  <rect x="-10" y="-10" width="20" height="20" transform="translate(25 25)" fill="rgba(0,0,0,.5)" class="sq">
+    <animate attributeName="fill" from="rgba(0,0,0,0)" to="rgba(0,0,0,.5)" repeatCount="indefinite" dur="1.6s" begin="0.0s" values="rgba(0,0,0,.5);rgba(0,0,0,0);rgba(0,0,0,0);rgba(0,0,0,.5);rgba(0,0,0,.5)" keyTimes="0;0.1;0.2;0.4;1"></animate>
+    <animateTransform attributeName="transform" type="scale" additive="sum" from="0.8" to="1" repeatCount="indefinite" begin="0.0s" dur="1.6s" values="1;0.8;0.8;1;1" keyTimes="0;0.1;0.2;0.4;1"></animateTransform>
+  </rect>
+  <rect x="-10" y="-10" width="20" height="20" transform="translate(50 25)" fill="rgba(0,0,0,.5)" class="sq">
+    <animate attributeName="fill" from="rgba(0,0,0,0)" to="rgba(0,0,0,.5)" repeatCount="indefinite" dur="1.6s" begin="0.4s" values="rgba(0,0,0,.5);rgba(0,0,0,0);rgba(0,0,0,0);rgba(0,0,0,.5);rgba(0,0,0,.5)" keyTimes="0;0.1;0.2;0.4;1"></animate>
+    <animateTransform attributeName="transform" type="scale" additive="sum" from="0.8" to="1" repeatCount="indefinite" begin="0.4s" dur="1.6s" values="1;0.8;0.8;1;1" keyTimes="0;0.1;0.2;0.4;1"></animateTransform>
+  </rect>
+  <rect x="-10" y="-10" width="20" height="20" transform="translate(50 50)" fill="rgba(0,0,0,.5)" class="sq">
+    <animate attributeName="fill" from="rgba(0,0,0,0)" to="rgba(0,0,0,.5)" repeatCount="indefinite" dur="1.6s" begin="0.8s" values="rgba(0,0,0,.5);rgba(0,0,0,0);rgba(0,0,0,0);rgba(0,0,0,.5);rgba(0,0,0,.5)" keyTimes="0;0.1;0.2;0.4;1"></animate>
+    <animateTransform attributeName="transform" type="scale" additive="sum" from="0.8" to="1" repeatCount="indefinite" begin="0.8s" dur="1.6s" values="1;0.8;0.8;1;1" keyTimes="0;0.1;0.2;0.4;1"></animateTransform>
+  </rect>
+  <rect x="-10" y="-10" width="20" height="20" transform="translate(25 50)" fill="rgba(0,0,0,.5)" class="sq">
+    <animate attributeName="fill" from="rgba(0,0,0,0)" to="rgba(0,0,0,.5)" repeatCount="indefinite" dur="1.6s" begin="1.2s" values="rgba(0,0,0,.5);rgba(0,0,0,0);rgba(0,0,0,0);rgba(0,0,0,.5);rgba(0,0,0,.5)" keyTimes="0;0.1;0.2;0.4;1"></animate>
+    <animateTransform attributeName="transform" type="scale" additive="sum" from="0.8" to="1" repeatCount="indefinite" begin="1.2s" dur="1.6s" values="1;0.8;0.8;1;1" keyTimes="0;0.1;0.2;0.4;1"></animateTransform>
+  </rect>
+</svg>
+           <svg class="fp-loading-rounded-fill" width="112px" height="112px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+    <rect x="0" y="0" width="76" height="76" fill="rgba(0,0,0,0)" class="bk"></rect>
+    <circle cx="0" cy="0" r="10" transform="translate(25 25)" fill="rgba(0,0,0,.5)" class="sq">
+      <animate attributeName="fill" from="rgba(0,0,0,0)" to="rgba(0,0,0,.5)" repeatCount="indefinite" dur="1.6s" begin="0.0s" values="rgba(0,0,0,.5);rgba(0,0,0,0);rgba(0,0,0,0);rgba(0,0,0,.5);rgba(0,0,0,.5)" keyTimes="0;0.1;0.2;0.4;1"></animate>
+      <animateTransform attributeName="transform" type="scale" additive="sum" from="0.8" to="1" repeatCount="indefinite" begin="0.0s" dur="1.6s" values="1;0.8;0.8;1;1" keyTimes="0;0.1;0.2;0.4;1"></animateTransform>
+    </circle>
+    <circle cx="0" cy="0" r="10" transform="translate(50 25)" fill="rgba(0,0,0,.5)" class="sq">
+      <animate attributeName="fill" from="rgba(0,0,0,0)" to="rgba(0,0,0,.5)" repeatCount="indefinite" dur="1.6s" begin="0.4s" values="rgba(0,0,0,.5);rgba(0,0,0,0);rgba(0,0,0,0);rgba(0,0,0,.5);rgba(0,0,0,.5)" keyTimes="0;0.1;0.2;0.4;1"></animate>
+      <animateTransform attributeName="transform" type="scale" additive="sum" from="0.8" to="1" repeatCount="indefinite" begin="0.4s" dur="1.6s" values="1;0.8;0.8;1;1" keyTimes="0;0.1;0.2;0.4;1"></animateTransform>
+    </circle>
+    <circle cx="0" cy="0" r="10" transform="translate(50 50)" fill="rgba(0,0,0,.5)" class="sq">
+      <animate attributeName="fill" from="rgba(0,0,0,0)" to="rgba(0,0,0,.5)" repeatCount="indefinite" dur="1.6s" begin="0.8s" values="rgba(0,0,0,.5);rgba(0,0,0,0);rgba(0,0,0,0);rgba(0,0,0,.5);rgba(0,0,0,.5)" keyTimes="0;0.1;0.2;0.4;1"></animate>
+      <animateTransform attributeName="transform" type="scale" additive="sum" from="0.8" to="1" repeatCount="indefinite" begin="0.8s" dur="1.6s" values="1;0.8;0.8;1;1" keyTimes="0;0.1;0.2;0.4;1"></animateTransform>
+    </circle>
+    <circle cx="0" cy="0" r="10" transform="translate(25 50)" fill="rgba(0,0,0,.5)" class="sq">
+      <animate attributeName="fill" from="rgba(0,0,0,0)" to="rgba(0,0,0,.5)" repeatCount="indefinite" dur="1.6s" begin="1.2s" values="rgba(0,0,0,.5);rgba(0,0,0,0);rgba(0,0,0,0);rgba(0,0,0,.5);rgba(0,0,0,.5)" keyTimes="0;0.1;0.2;0.4;1"></animate>
+      <animateTransform attributeName="transform" type="scale" additive="sum" from="0.8" to="1" repeatCount="indefinite" begin="1.2s" dur="1.6s" values="1;0.8;0.8;1;1" keyTimes="0;0.1;0.2;0.4;1"></animateTransform>
+    </circle>
+</svg>
+           <svg class="fp-loading-rounded-outline" width="112px" height="112px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+    <rect x="0" y="0" width="76" height="76" fill="rgba(0,0,0,0)" class="bk"></rect>
+    <circle cx="0" cy="0" r="10" transform="translate(25 25)" fill="none" stroke="rgba(0,0,0,.5)" stroke-width="3%" class="sq">
+      <animate attributeName="stroke" from="rgba(0,0,0,0)" to="rgba(0,0,0,.5)" repeatCount="indefinite" dur="1.6s" begin="0.0s" values="rgba(0,0,0,.5);rgba(0,0,0,0);rgba(0,0,0,0);rgba(0,0,0,.5);rgba(0,0,0,.5)" keyTimes="0;0.1;0.2;0.4;1"></animate>
+      <animateTransform attributeName="transform" type="scale" additive="sum" from="0.8" to="1" repeatCount="indefinite" begin="0.0s" dur="1.6s" values="1;0.8;0.8;1;1" keyTimes="0;0.1;0.2;0.4;1"></animateTransform>
+    </circle>
+    <circle cx="0" cy="0" r="10" transform="translate(50 25)" fill="none" stroke="rgba(0,0,0,.5)" stroke-width="3%" class="sq">
+      <animate attributeName="stroke" from="rgba(0,0,0,0)" to="rgba(0,0,0,.5)" repeatCount="indefinite" dur="1.6s" begin="0.4s" values="rgba(0,0,0,.5);rgba(0,0,0,0);rgba(0,0,0,0);rgba(0,0,0,.5);rgba(0,0,0,.5)" keyTimes="0;0.1;0.2;0.4;1"></animate>
+      <animateTransform attributeName="transform" type="scale" additive="sum" from="0.8" to="1" repeatCount="indefinite" begin="0.4s" dur="1.6s" values="1;0.8;0.8;1;1" keyTimes="0;0.1;0.2;0.4;1"></animateTransform>
+    </circle>
+    <circle cx="0" cy="0" r="10" transform="translate(50 50)" fill="none" stroke="rgba(0,0,0,.5)" stroke-width="3%" class="sq">
+      <animate attributeName="stroke" from="rgba(0,0,0,0)" to="rgba(0,0,0,.5)" repeatCount="indefinite" dur="1.6s" begin="0.8s" values="rgba(0,0,0,.5);rgba(0,0,0,0);rgba(0,0,0,0);rgba(0,0,0,.5);rgba(0,0,0,.5)" keyTimes="0;0.1;0.2;0.4;1"></animate>
+      <animateTransform attributeName="transform" type="scale" additive="sum" from="0.8" to="1" repeatCount="indefinite" begin="0.8s" dur="1.6s" values="1;0.8;0.8;1;1" keyTimes="0;0.1;0.2;0.4;1"></animateTransform>
+    </circle>
+    <circle cx="0" cy="0" r="10" transform="translate(25 50)" fill="none" stroke="rgba(0,0,0,.5)" stroke-width="3%" class="sq">
+      <animate attributeName="stroke" from="rgba(0,0,0,0)" to="rgba(0,0,0,.5)" repeatCount="indefinite" dur="1.6s" begin="1.2s" values="rgba(0,0,0,.5);rgba(0,0,0,0);rgba(0,0,0,0);rgba(0,0,0,.5);rgba(0,0,0,.5)" keyTimes="0;0.1;0.2;0.4;1"></animate>
+      <animateTransform attributeName="transform" type="scale" additive="sum" from="0.8" to="1" repeatCount="indefinite" begin="1.2s" dur="1.6s" values="1;0.8;0.8;1;1" keyTimes="0;0.1;0.2;0.4;1"></animateTransform>
+    </circle>
+</svg>
+         </div>         <div class="fp-header">           <a class="fp-share fp-icon"></a>                      <a class="fp-unload fp-icon"></a>         </div>         <p class="fp-speed-flash"></p>         <div class="fp-play">           <a class="fp-icon fp-playbtn"></a>           <svg class="fp-play-rounded-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs><style>.a{fill:#000;opacity:0.65;}.b{fill:#fff;opacity:1.0;}</style>
+  </defs><title>play-rounded-fill</title>
+  <path class="fp-color-play" d="M49.9217-.078a50,50,0,1,0,50,50A50.0564,50.0564,0,0,0,49.9217-.078Z"></path>
+  <path class="b" d="M35.942,35.2323c0-4.7289,3.3506-6.6637,7.446-4.2971L68.83,45.6235c4.0956,2.364,4.0956,6.2319,0,8.5977L43.388,68.91c-4.0954,2.364-7.446.43-7.446-4.2979Z" filter="url(http://www.portevergladeswebcam.com/#f1)"></path>
+  </svg>
+  
+           <svg class="fp-play-rounded-outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.844 99.8434"><defs><style>.fp-color-play{opacity:0.65;}.controlbutton{fill:#fff;}</style>
+</defs>
+<title>play-rounded-outline</title><path class="fp-color-play" d="M49.9217-.078a50,50,0,1,0,50,50A50.0564,50.0564,0,0,0,49.9217-.078Z"></path><path class="controlbutton" d="M41.0359,71.19a5.0492,5.0492,0,0,1-2.5575-.6673c-1.8031-1.041-2.7958-3.1248-2.7958-5.8664V35.1887c0-2.7429.9933-4.8272,2.797-5.8676,1.8025-1.0422,4.1034-.86,6.48.5143L70.4782,44.5672c2.3751,1.3711,3.6826,3.2725,3.6832,5.3545s-1.3076,3.9845-3.6832,5.3562L44.9592,70.0114A7.9384,7.9384,0,0,1,41.0359,71.19Zm.0065-40.123a2.6794,2.6794,0,0,0-1.3582.3413c-1.0263.5926-1.5912,1.9349-1.5912,3.78V64.6563c0,1.8449.5649,3.1866,1.5906,3.7791,1.0281.5932,2.4733.4108,4.07-.512L69.273,53.1906c1.5983-.9227,2.478-2.0838,2.478-3.2689s-.88-2.3445-2.478-3.2666L43.754,31.9227A5.5685,5.5685,0,0,0,41.0423,31.0671Z" filter="url(http://www.portevergladeswebcam.com/#f1)"></path></svg>
+           <svg class="fp-play-sharp-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>.fp-color-play{opacity:0.65;}.controlbutton{fill:#fff;}</style>
+  </defs>
+  <title>play-sharp-fill</title>
+  <path class="fp-color-play" d="M49.9217-.078a50,50,0,1,0,50,50A50.0564,50.0564,0,0,0,49.9217-.078Z"></path>
+  <polygon class="controlbutton" points="73.601 50 37.968 70.573 37.968 29.427 73.601 50" filter="url(http://www.portevergladeswebcam.com/#f1)"></polygon>
+</svg>
+           <svg class="fp-play-sharp-outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.844 99.8434"><defs><style>.controlbuttonbg{opacity:0.65;}.controlbutton{fill:#fff;}</style>
+</defs><title>play-sharp-outline</title><path class="fp-color-play" d="M49.9217-.078a50,50,0,1,0,50,50A50.0564,50.0564,0,0,0,49.9217-.078Z"></path><path class="controlbutton" d="M36.9443,72.2473V27.2916L75.8776,49.77Zm2.2-41.1455V68.4371L71.4776,49.77Z" filter="url(http://www.portevergladeswebcam.com/#f1)"></path></svg>
+         </div>         <div class="fp-pause">           <a class="fp-icon fp-playbtn"></a>           <svg class="fp-pause-sharp-outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.8434 99.8434"><defs><style>.fp-color-play{opacity:0.65;}.rect{fill:#fff;}</style>
+</defs><title>pause-sharp-outline</title><path class="fp-color-play" d="M49.9212-.0783a50,50,0,1,0,50.0006,50A50.0562,50.0562,0,0,0,49.9212-.0783Z"></path><g class="controlbutton" filter="url(http://www.portevergladeswebcam.com/#f1)"><path class="rect" d="M46.8709,69.9531H33.1385V29.89H46.8709ZM35.1416,67.95h9.7262V31.8935H35.1416Z"></path><path class="rect" d="M66.7047,69.9531H52.9722V29.89H66.7047ZM54.9754,67.95h9.7262V31.8935H54.9754Z"></path></g></svg>
+           <svg class="fp-pause-sharp-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.fp-color-play{opacity:0.65;}.rect{fill:#fff;}</style>
+</defs><title>pause-sharp-fill</title><path class="fp-color-play" d="M49.9217-.078a50,50,0,1,0,50,50A50.0564,50.0564,0,0,0,49.9217-.078Z"></path><g class="controlbutton" filter="url(http://www.portevergladeswebcam.com/#f1)"><rect class="rect" x="33.5" y="30.1042" width="12.2634" height="39.7917"></rect><rect class="rect" x="54.2366" y="30.1042" width="12.2634" height="39.7917"></rect></g></svg>
+           <svg class="fp-pause-rounded-outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.8434 99.8434"><defs><style>.fp-color-play{opacity:0.65;}.rect{fill:#fff;}</style>
+</defs><title>pause-rounded-outline</title><path class="fp-color-play" d="M49.9212-.0783a50,50,0,1,0,50.0006,50A50.0562,50.0562,0,0,0,49.9212-.0783Z"></path><g class="controlbutton"><path class="rect" d="M39.0036,71.9726a7.565,7.565,0,0,1-7.557-7.556v-28.99a7.5565,7.5565,0,0,1,15.113,0v28.99A7.5648,7.5648,0,0,1,39.0036,71.9726Zm0-41.904a5.3647,5.3647,0,0,0-5.3593,5.3582v28.99a5.3587,5.3587,0,0,0,10.7174,0v-28.99A5.3645,5.3645,0,0,0,39.0036,30.0686Z" filter="url(http://www.portevergladeswebcam.com/#f1)"></path><path class="rect" d="M60.84,71.9726a7.5648,7.5648,0,0,1-7.556-7.556v-28.99a7.5565,7.5565,0,0,1,15.113,0v28.99A7.565,7.565,0,0,1,60.84,71.9726Zm0-41.904a5.3645,5.3645,0,0,0-5.3582,5.3582v28.99a5.3587,5.3587,0,0,0,10.7174,0v-28.99A5.3647,5.3647,0,0,0,60.84,30.0686Z" filter="url(http://www.portevergladeswebcam.com/#f1)"></path></g></svg>
+           <svg class="fp-pause-rounded-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.fp-color-play{opacity:0.65;}.rect{fill:#fff;}</style>
+</defs><title>pause-rounded-fill</title><path class="fp-color-play" d="M49.9217-.078a50,50,0,1,0,50,50A50.0564,50.0564,0,0,0,49.9217-.078Z"></path><g class="controlbutton" filter="url(http://www.portevergladeswebcam.com/#f1)"><rect class="rect" x="31.844" y="28.1231" width="13.4362" height="43.5973" rx="6.7181" ry="6.7181"></rect><rect class="rect" x="54.5638" y="28.1231" width="13.4362" height="43.5973" rx="6.7181" ry="6.7181"></rect></g></svg>
+         </div>         <div class="fp-controls">            <a class="fp-icon fp-playbtn"></a>            <span class="fp-elapsed">12:50</span>            <div class="fp-timeline fp-bar">               <div class="fp-buffer" style="width: 100%;"></div>               <span class="fp-timestamp"></span>               <div class="fp-progress fp-color animated" style="transition-duration: 250ms; width: 100%;"></div>            </div>            <span class="fp-duration">Live</span>            <span class="fp-remaining">00:00</span>            <div class="fp-volume">               <a class="fp-icon fp-volumebtn"></a>               <div class="fp-volumebar fp-bar-slider">                 <em class="fp-color"></em><em class="fp-color"></em><em class="fp-color"></em><em class="fp-color"></em><em class="fp-color"></em><em class="fp-color"></em><em class="fp-color"></em>               </div>            </div>            <strong class="fp-speed fp-hidden"></strong>         <strong class="fp-cc fp-hidden">CC</strong></div><div class="fp-menu fp-share-menu"><strong>Share</strong><a class="fp-icon fp-facebook">Facebook</a><a class="fp-icon fp-twitter">Twitter</a></div><div class="fp-menu fp-subtitle-menu"><strong>Closed Captions</strong><a data-subtitle-index="-1" class="fp-selected">No subtitles</a></div></div><div class="fp-help">         <a class="fp-close"></a>         <div class="fp-help-section fp-help-basics">            <p><em>space</em>play / pause</p>            <p><em>q</em>unload | stop</p>            <p><em>f</em>fullscreen</p><p><em>shift</em> + <em>←</em><em>→</em>slower / faster</p>         </div>         <div class="fp-help-section">            <p><em>↑</em><em>↓</em>volume</p>            <p><em>m</em>mute</p>         </div>         <div class="fp-help-section">            <p><em>←</em><em>→</em>seek</p>            <p><em>&nbsp;. </em>seek to previous            </p><p><em>1</em><em>2</em>… <em>6</em> seek to 10%, 20% … 60% </p>         </div>   </div><div class="fp-captions"></div></div></div>
+    			</div>
+					<script>
+					    loadPlayers();
+					</script> 
+    			<div class="horiz-banner-box-1 back-black">
+    					<div id="adbannerdiv">
+									<script async="" src="1_HTML_files/adsbygoogle.js"></script>
+                  <!-- PEW Banner Bottom -->
+                  <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-4810494881468391" data-ad-slot="0576087673" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;width:728px;height:90px;" width="728" height="90" frameborder="0"></iframe></ins></ins></ins>
+                  <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>			 
+        	    </div>
+    			</div>
+        	<div class="map-tweet-box back-mt-blue">
+        			<div id="trafficmapdiv">
+              		 <script>
+                      width='100%';
+                      height='570';
+                      border='0';
+    									shownames='false';
+                  		latitude='26.0921';
+                  		longitude='-80.1128';
+                      zoom='14';
+                      maptype='0';
+                      trackvessel='0';
+                      fleet='';
+                      remember='false';
+    									language='en';
+                      showmenu='true';									
+              		</script>
+              		<script src="1_HTML_files/embed.js"></script><iframe name="marinetraffic" id="marinetraffic" scrolling="no" src="http://www.marinetraffic.com/en/ais/embed/zoom:14/centery:26.0921/centerx:-80.1128/maptype:0/shownames:false/mmsi:0/shipid:0/fleet:/fleet_id:/vtypes:/showmenu:true/remember:false" width="100%" height="570" frameborder="0">Browser
+ does not support embedded objects.&lt;br/&gt;Visit directly &lt;a 
+href="http://www.marinetraffic.com/"&gt;www.marinetraffic.com&lt;/a&gt;</iframe>
+
+							</div>
+    			    <div id="twitterblock">
+          	 			<iframe id="twitter-widget-0" scrolling="no" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 100%; height: 570px; padding: 0px; border: medium none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px; min-height: 200px;" data-widget-id="382669323006783488" title="Twitter Timeline" frameborder="0"></iframe>
+          				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    			    </div>							 
+          		<script>							 
+    							function expandMap() {
+    							     document.getElementById('twitterblock').style.display = "none";
+    							     document.getElementById('trafficmapdiv').style.width = '100%';
+    							     document.getElementById('mapcontrol').innerHTML = "Shrink Map and Show Twitter Feed";
+    							     document.getElementById('mapcontrol').href = "javascript:shrinkMap();";											 											  
+    							}
+    							function shrinkMap() {
+    							     document.getElementById('trafficmapdiv').style.width = '50%';
+    							     document.getElementById('twitterblock').style.display = "inline-block";
+    							     document.getElementById('mapcontrol').innerHTML = "Expand Map and Hide Twitter Feed";
+    							     document.getElementById('mapcontrol').href = "javascript:expandMap();";											 
+    							}									 
+							</script>							
+          </div>
+    		  <div id="mapexpanddiv" class="back-mt-blue">
+    	        <a id="mapcontrol" href="javascript:expandMap();">Expand Map and Hide Twitter Feed</a>
+    			</div>
+    		</div>
+    		<div class="right-col back-white">
+        	<div id="adskyrightdiv" class="ad160x600">
+              <style type="text/css">
+							.adslotright1 { display:inline-block;width:160px;height:600px; }
+							@media (max-device-width:1024px) and (orientation:portrait) { .adslotright1 { display:none; } }							
+							@media (min-device-width:1025px) and (max-device-width:1279px) and (orientation:portrait) { .adslotright1 { display:none; } }
+							@media (min-device-width: 1280px), (orientation:landscape) { .adslotright1 { display:inline-block; } }
+              </style>
+              <!-- PEW Sky Right -->
+              <ins class="adsbygoogle adslotright1" data-ad-client="ca-pub-4810494881468391" data-ad-slot="1643804636" data-adsbygoogle-status="done" style="width: 160px; height: 600px;"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><ins id="aswift_2_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;width:160px;height:600px;" width="160" height="600" frameborder="0"></iframe></ins></ins></ins>
+              <script async="" src="1_HTML_files/adsbygoogle.js"></script>
+              <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>							
+        	</div>	
+        	<div id="adskyright2div" class="adslotright2"><iframe id="adskyright2" src="1_HTML_files/s286951.html" scrolling="no" allowtransparency="true" style="border:none; width:160px; height:600px;" data-integralas-id-32368b5f-b4cc-65e1-bf8b-bd5dae8d4f4c="" data-integralas-id-9fd6051b-a21d-d649-8727-6853933dad7a="" width="160" height="600" frameborder="0"></iframe></div>
+			    <script>
+					    loadSovrn(sovrnAdTag1, 160, 600, "adskyright2");
+					</script>
+    		</div>
+		</div>
+	  <div class="horiz-banner-box-2">
+			<div id="adbanner2div"><iframe id="adbanner2" src="1_HTML_files/s286948.html" scrolling="no" allowtransparency="true" style="border:none; width:728px; height:90px;" data-integralas-id-e8182f19-16db-88f0-a383-7d6a828d1856="" width="728" height="90" frameborder="0"></iframe></div>
+	    <script>
+			    loadSovrn(sovrnAdTag2, 728, 90, "adbanner2");
+			</script>			
+	  </div>
+		<div class="foot-box">
+			<div id="footerdiv">
+    			<div class="welcome">
+							 Welcome to the <b>Port Everglades Webcam</b>.
+							 <br>
+							 A 24/7 live streaming HD-quality Internet video broadcast brought to you by <a href="http://ptztv.com/" target="_blank">PTZtv</a>.
+							 Watch cruise ships, container ships, tankers, mega yachts, sail 
+boats, fishing boats, tugs and practically every type of water
+							 craft you can imagine. Don't miss our cruise ship sail-away 
+shows where we follow each ship out of the port. Check the <a href="https://pevvesseltraffic.broward.org/webx/" target="_blank">port schedule</a>
+							 or <a href="http://www.facebook.com/Port.Everglades.Webcam" target="_blank">visit us on Facebook</a> for constant updates on our next events.
+							 Enjoy close-ups of your friends and family on ships from <a href="http://www.royalcaribbean.com/" target="_blank">Royal Caribbean International</a>,
+							 <a href="http://www.hollandamerica.com/" target="_blank">Holland America Line</a>, <a href="http://www.princess.com/" target="_blank">Princess Cruises</a>,
+							 <a href="http://www.carnival.com/" target="_blank">Carnival Cruise Line</a>, <a href="http://www.celebrity.com/" target="_blank">Celebrity Cruises</a>,
+							 <a href="http://www.silversea.com/" target="_blank">Silversea Cruises</a>, <a href="http://www.rssc.com/" target="_blank">Regent Seven Seas Cruises</a>,
+							 <a href="http://www.seabourn.com/" target="_blank">Seabourn</a>, <a href="http://www.cunard.com/" target="_blank">Cunard Cruise Line</a>,
+							 <a href="http://www.pocruises.com/" target="_blank">P&amp;O Cruises</a> and more.
+							 Explore a day in the life of Port Everglades with our round-the-clock <a href="http://portfever.com/?pew" target="_blank">Port Fever</a>
+ archives.
+							 Take a virtual vacation every day and join us for some tropical 
+sun, palm trees and turquoise water. We are your window and your escape 
+into the daily life of Port Everglades.
+					</div>					
+			    <ul class="links">
+							<li><a href="javascript:void(0);" onclick="window.location='http://www.FtLauderdaleWebcam.com';">Fort Lauderdale</a></li>								
+							<li><a href="javascript:void(0);" onclick="window.location='http://www.PortMiamiWebcam.com';">Port Miami</a></li>								
+							<li><a href="javascript:void(0);" onclick="window.location='http://www.MiamiAirportCam.com';">Miami Airport</a></li>
+							<li><a href="javascript:void(0);" onclick="window.location='http://www.KeyWestHarborWebcam.com';">Key West</a></li>
+							<li><a href="javascript:void(0);" onclick="window.location='http://www.PortTampaWebcam.com';">Tampa</a></li>
+							<li><a href="javascript:void(0);" onclick="window.location='http://www.PortNassauWebcam.com';">Nassau</a></li>
+							<li><a href="javascript:void(0);" onclick="window.location='http://www.PortStMaartenWebcam.com';">St. Maarten</a></li>
+							<li><a href="javascript:void(0);" onclick="window.location='http://www.MahoBeachCam.com';">Maho Beach</a></li>
+					</ul>
+					<ul>							
+							<li><a href="javascript:void(0);" onclick="window.location='http://www.PortArubaWebcam.com';">Aruba</a></li>
+							<li><a href="javascript:void(0);" onclick="window.location='http://www.PortBermudaWebcam.com';">Bermuda</a></li>
+							<li><a href="javascript:void(0);" onclick="window.location='http://www.PortCanaveralWebcam.com';">Port Canaveral</a></li>
+							<li><a href="javascript:void(0);" onclick="window.location='http://www.NYHarborWebcam.com';">NY Harbor</a></li>
+							<li><a href="javascript:void(0);" onclick="window.location='http://www.PortNYWebcam.com';">NY Port</a></li>
+							<li><a href="javascript:void(0);" onclick="window.location='http://www.JuneauHarborWebcam.com';">Juneau AK</a></li>
+							<li><a href="javascript:void(0);" onclick="window.location='http://www.MorganHillWebcam.com';">California</a></li>
+    			</ul>					
+					<ul class="links">
+							<li><a href="javascript:wopen('wave.html',%20'wave',%20850,%20760,%20'yes');">Request-a-Wave</a></li>		
+							<li><a href="http://www.portevergladeswebcam.com/replay.php" target="_blank">Sail-Away Video</a></li>
+							<li><a href="http://portfever.com/?pew" target="_blank">Snapshot Archive</a></li>
+							<li><a href="https://pevvesseltraffic.broward.org/webx/" target="_blank">Port Schedule</a></li>
+							<li><a href="http://www.porteverglades.net/" target="_blank">Port Everglades</a></li>
+							<li><a href="http://www.sunny.org/" target="_blank">Convention &amp; Visitors Bureau</a></li>
+					</ul>
+					<ul class="links">
+			        <li><a href="http://www.ptztv.com/premium/" target="_blank">PTZtv PREMIUM</a></li>
+					    <li><a href="http://www.ptztv.com/about-us/" target="_blank">About</a></li>					
+         			<li><a href="http://www.ptztv.com/contact-us/" target="_blank">Contact</a></li>
+						  <li><a href="http://www.ptztv.com/about-us/privacy/" target="_blank">Privacy Policy</a></li>								
+						  <li><a href="http://www.ptztv.com/about-us/terms-conditions/" target="_blank">Terms of Use</a></li>
+						  <li><a href="http://www.ptztv.com/faq/" target="_blank">FAQ</a></li>							
+					</ul>
+					<div class="copyright">
+				      Port Everglades Webcam content copyright © <script type="text/javascript">document.write(new Date().getFullYear());</script>2018 <a href="http://www.portevergladeswebcam.com/">PortEvergladesWebcam.com</a> and <a href="http://www.ptztv.com/" target="_blank">PTZtv LLC</a>
+							All rights reserved.<br>
+							We are not affiliated with <a href="http://www.broward.org/" target="_blank">Broward County</a> or <a href="http://porteverglades.net/" target="_blank">Port Everglades</a>.
+							<br><br>
+					</div>
+  		</div>
+		</div>
+  </div><div style="width: 0px; height: 0px; overflow: hidden; position: absolute; margin: 0px; padding: 0px;">
+</div><div style="width: 0px; height: 0px; overflow: hidden; position: absolute; margin: 0px; padding: 0px;">
+</div><div style="width: 0px; height: 0px; overflow: hidden; position: absolute; margin: 0px; padding: 0px;"><svg class="fp-filters" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0">
+  <defs>
+    <filter id="f1" x="-20%" y="-20%" width="200%" height="200%">
+      <feOffset result="offOut" in="SourceAlpha" dx="0" dy="0"></feOffset>
+      <feColorMatrix result="matrixOut" in="offOut" type="matrix" values="0.3 0 0 0 0 0 0.3 0 0 0 0 0 0.3 0 0 0 0 0 0.4 0"></feColorMatrix>
+      <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="4"></feGaussianBlur>
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal"></feBlend>
+    </filter>
+  </defs>
+</svg>
+</div>
+  
+<iframe name="oauth2relay736790927" id="oauth2relay736790927" src="1_HTML_files/postmessageRelay.html" style="width: 1px; height: 1px; position: absolute; top: -100px;" tabindex="-1" aria-hidden="true"></iframe><iframe scrolling="no" allowtransparency="true" src="1_HTML_files/widget_iframe.html" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox" scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe></body></html>
