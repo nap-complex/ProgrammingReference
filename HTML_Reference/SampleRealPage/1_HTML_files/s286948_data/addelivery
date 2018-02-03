@@ -1,0 +1,1 @@
+sovrn.ads.setChainVars({"pod":"vap4iad1.lijit.com","ads":[{"html":"","data":{"campaignid":"232","bannerid":"0"}}]})

@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+.banner {
+    width: 160px;
+    height: 600px;
+    border: 1px solid #333;
+    background: #103A5A;
+    overflow: hidden;
+    box-sizing:border-box;
+    display: block !important;
+}
+#loader-container {
+    display: none;
+}
+#btn-exit {
+    width: 160px;
+    height: 600px;
+    cursor: pointer;
+    opacity: 0;
+}
+#logo {
+    width: 95px;
+    height: 106px;
+    top: 84px;
+    left: 33px;
+    background: url(logo.png) no-repeat;
+    background-size: contain;
+    opacity: 0;
+}
+#copy1 {
+    width: 129px;
+    height: 69px;
+    top: 282px;
+    left: 16px;
+    background: url(copy1.png) no-repeat;
+    background-size: contain;
+    opacity: 0;
+    
+    -moz-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -moz-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+}
+#copy2 {
+    width: 146px;
+    height: 69px;
+    top: 282px;
+    left: 8px;
+    background: url(copy2.png) no-repeat;
+    background-size: contain;
+    opacity: 1;
+
+    -moz-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -moz-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+}
+#copy3 {
+    width: 119px;
+    height: 41px;
+    top: 129px;
+    left: 20px;
+    background: url(copy3.png) no-repeat;
+    background-size: contain;
+    opacity: 0;
+
+    -moz-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -moz-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+}
+#copy4 {
+    width: 86px;
+    height: 41px;
+    top: 231px;
+    left: 34px;
+    background: url(copy4.png) no-repeat;
+    background-size: contain;
+    opacity: 0;
+
+    -moz-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -moz-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+}
+#copy5 {
+    width: 128px;
+    height: 41px;
+    top: 332px;
+    left: 15px;
+    background: url(copy5.png) no-repeat;
+    background-size: contain;
+    opacity: 0;
+
+    -moz-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -moz-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+}
+#copy6 {
+    width: 113px;
+    height: 84px;
+    top: 256px;
+    left: 23px;
+    background: url(copy6.png) no-repeat;
+    background-size: contain;
+    opacity: 0;
+}
+#poket_cont{
+    top: 135px;
+    left: -85px;
+    width: 160px;
+    height: 600px;
+    -moz-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+}
+.dollar{
+    top: 71px;
+}
+#dollar, #dollar2, #dollar3{
+    width: 73px;
+    height: 73px;
+    left: 100px;
+    background: url(dollar.svg) no-repeat;
+    background-size: contain;
+}
+#dollar2 {
+    -moz-transform-origin: -47px 298px;
+    -webkit-transform-origin: -47px 298px;
+    transform-origin: -47px 298px;
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+#dollar3 {
+    -moz-transform-origin: 5px 129px;
+    -webkit-transform-origin: 5px 129px;
+    transform-origin: 5px 129px;
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+#pocket{
+    width: 90px;
+    height: 83px;
+    top: 74px;
+    left: 103px;
+    background: url(pocket.svg) no-repeat; 
+}
+#bullet, #bullet2, #bullet3{
+    width: 24px;
+    height: 15px;
+    top: -20px;
+    left: 47px;
+    background: url(bullet.svg) no-repeat; 
+}
+#bullet2{
+    top:-21px;
+    left:31px;
+}
+#bullet3{
+    top:-21px;
+    left:52px;
+}
+#star{
+    width: 20px;
+    height: 19px;
+    top: 204px;
+    left: 70px;
+    background: url(star.svg) no-repeat;
+    opacity: 0;
+
+    -moz-transform: scale(19);
+    -webkit-transform: scale(19);
+    transform: scale(19);
+}
+#redLines{
+    width: 142px;
+    height: 3px;
+    top: 213px;
+    left: 9px;
+    background: url(redLines.svg) no-repeat;
+    opacity: 0;
+}
+#cta{
+    top: 375px;
+    left: 15px;
+}
+#cta_out{
+    width: 130px;
+    height: 37px;
+    background: url(cta_out.png) no-repeat;
+    background-size: contain;
+    opacity: 0;
+}
+#cta_over{
+    width: 130px;
+    height: 37px;
+    background: url(cta_over.png) no-repeat;
+    background-size: contain;
+    opacity: 0;
+}
