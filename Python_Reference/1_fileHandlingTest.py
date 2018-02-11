@@ -12,6 +12,7 @@ file1 = open('testfile.txt', 'a')
 file1.write("this should be a line in the file\n")
 file1.close()
 
+# the 'a' is append, opens file in append mode.  text file
 
 print("")
 print("")
