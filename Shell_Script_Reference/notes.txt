@@ -1,0 +1,1 @@
+See if you can run a script within the gnome-terminal commands to try and get the command promp smaller
