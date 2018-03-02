@@ -1,0 +1,33 @@
+body {
+  margin:0;
+  background-color: gray;
+  color: #ffffff;
+}
+
+body div{
+  width: 750px;
+}
+
+h1 {
+  margin:0;
+  font-family: "arial", monospace;
+  font-size: 80px;
+  background-color: #53324d;
+  padding: 5px;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  background-color: #000000;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+span{
+   font-size:35px;
+   font-style: italic;
+   color: yellow;
+
+}
