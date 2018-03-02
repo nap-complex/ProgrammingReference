@@ -90,7 +90,7 @@ header a:hover{
 
 #showcase{
   min-height: 400px;
-  background:url('../img/8th.jpg') no-repeat 0 -295px;
+  background:url('../img/dark_cat.jpg') no-repeat 0 -295px;
   text-align: center;
   color:#ffffff;
 }
@@ -190,7 +190,7 @@ footer{
   header nav li,
   #newsletter h1,
   #newsletter form,
-  #boxes .box
+  #boxes .box,
   article#main-col,
   aside#sidebar{
     float: none;
@@ -211,8 +211,7 @@ footer{
     width: 100%;
   }
 
-  #newsletter form input[type="email"],
-    .quote input, .quote textarea{
+  #newsletter form input[type="email"], .quote input, .quote textarea{
     width:100%;
     margin-bottom: 5px;
   }

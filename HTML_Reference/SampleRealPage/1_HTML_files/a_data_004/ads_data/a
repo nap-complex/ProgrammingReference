@@ -1,30 +1,0 @@
-
-var ftGUID_2934169="35487AC7C2545D";
-var ftConfID_2934169="7708954";
-var ftParams_2934169="ftx=&fty=&ftadz=&ftscw=&ft_custom=20588693228591821205156196654002___&ftOBA=1&ft_ifb=1&ft_domain=www.portevergladeswebcam.com&ft_agentEnv=0&ft_referrer=http%3A%2F%2Fwww.portevergladeswebcam.com%2F&cachebuster=859711.7193559791";
-var ftKeyword_2934169="";
-var ftCustom_2934169="20588693228591821205156196654002___";
-var ftSection_2934169="";
-var ftSegment_2934169="igo,igk,igp,n7h,sip";
-var ftSegmentList_2934169=[{s:'igo'},{s:'igk'},{s:'igp'},{s:'n7h'},{s:'sip'}];
-var ftRuleMatch_2934169="0";
-var ftTimestamp_2934169="1516482051";
-var ftGeoC2_2934169="us";
-var ftGeoState_2934169="fl";
-var ftGeoCity_2934169="west palm beach";
-var ftISP_2934169="att internet services";
-var ftSpeed_2934169="xdsl";
-var ftDMA_2934169="548";
-var ftLong_2934169="-80.0736";
-var ftLat_2934169="26.7792";
-var ftPostal_2934169="33404";
-var ftTimeZone_2934169="-500";
-var ftMobileCarrier_2934169="";
-var ftImp2934169 = {};
-ftImp2934169.privacy = "x";
-ftImp2934169.guidAge = "124";
-ftImp2934169.impID = "367239B36375A8";
-
-
-document.write('<scr'+'ipt src="https://cdn.flashtalking.com/xre/293/2934169/2099311/js/j-2934169-2099311.js" id="ftscript_m2934169" name="ftscript_m2934169"></scr'+'ipt>');
-                    
