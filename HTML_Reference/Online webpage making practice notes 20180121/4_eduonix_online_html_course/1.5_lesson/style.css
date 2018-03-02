@@ -1,6 +1,18 @@
 h1{
   text-align: center;
-  background-color: purple;
-  color: white;
-  
+  background-color: lightgray;
+  color: purple;
+  padding: 10px;
+  font-size: 45px;
+  border-bottom: 5px solid black;
+  border-top: 3px solid black;
+}
+
+table {
+  table-layout: fixed;
+  background-color: lightgrey;
+  padding: 5px;
+  border: 1px red solid;
+  width: 50%;
+  text-align: center;
 }
