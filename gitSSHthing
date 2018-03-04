@@ -12,8 +12,12 @@ copy pub key to github, or where ever
 
 copy github ssh adress for your repository
 
+do: git clone "url taken from github webpage"
+
 goto to github folder and git to the copied address, it should ask for a password, but what it wants in the pass phrase
 
 ************** passphrase from mac is whatisthis ********************
+
+I don't know why the mac always asks for this, nothing else does
 
 
