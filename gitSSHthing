@@ -1,5 +1,7 @@
 # How to do the ssh thing:
 
+random change for no reason for git test.  Delete this line whenever.
+
 goto .ssh folder
 
 type: $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
