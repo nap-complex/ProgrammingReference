@@ -37,4 +37,6 @@ function makeCanvas(){
     ctx2.fillRect(200, 5, 135, 135);
     ctx2.fillRect(45, 150, 135, 135);
 
+    /////LINES//////
+    
 }
