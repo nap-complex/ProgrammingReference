@@ -1,7 +1,5 @@
 # How to do the ssh thing:
 
-random change for no reason for git test.  Delete this line whenever.
-
 goto .ssh folder
 
 type: $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
@@ -18,8 +16,13 @@ do: git clone "url taken from github webpage"
 
 goto to github folder and git to the copied address, it should ask for a password, but what it wants in the pass phrase
 
+
+
+In case you are prompted for a password anyway: 
+
+************** passphrase from mint is whatsthat ********************
+
 ************** passphrase from mac is whatisthis ********************
 
-I don't know why the mac always asks for this, nothing else does
 
 
