@@ -24,5 +24,5 @@ In case you are prompted for a password anyway:
 
 ************** passphrase from mac is whatisthis ********************
 
-
+*** firgured out the password thing.  type ssh-add on command line and it will ask for the passphrase, enter the passphrase and mint will add it to something called keyring, no need to type it again.  maybe.
 
