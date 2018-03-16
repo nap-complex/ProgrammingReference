@@ -1,0 +1,45 @@
+body{
+  max-width: 800px;
+}
+
+h1{
+  background: darkgrey;
+  color: yellow;
+}
+
+#div1{
+  background: lightblue;
+  width: 200px;
+  height: 300px;
+  float: left;
+  padding: 20px;
+  margin: 0;
+}
+
+#div2{
+  background: lightgreen;
+  width: 200px;
+  height: 300px;
+  float: left;
+  padding: 20px;
+  margin: 0;
+}
+
+#div4{
+  background: pink;
+  width: 200px;
+  height: 300px;
+  float: left;
+  padding: 20px;
+  margin: 0;
+}
+
+#div3{
+  background: blue;
+  color: white;
+  width: 200px;
+  height: 300px;
+  float: left;
+  padding: 20px;
+  margin: 0;
+}
