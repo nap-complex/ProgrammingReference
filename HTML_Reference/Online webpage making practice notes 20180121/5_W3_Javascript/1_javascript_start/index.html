@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Left off at: https://www.w3schools.com/js/js_intro.asp 20180316 -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>My First JavaScript</title>
+  </head>
+  <body>
+    <header>
+      <h1>w3schools.com JavaScript Tutorial Thing</h1>
+    </header>
+
+    <hr />
+
+    <!-- First Thing -->
+    <h2>My First JavaScript</h2>
+
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Click me to display Date and Time.</button>
+
+    <p id="demo"></p>
+
+    <hr />
+
+    <!-- Second Thing -->
+    <h2>What Can JavaScript Do?</h2>
+
+    <p id="demo2">
+      JavaScript can change HTML content.
+    </p>
+
+    <button type="button"
+    onclick= 'document.getElementById("demo2").innerHTML =
+    "Hello JavaScript!"'>Click Me!</button>
+
+    <hr />
+    <!-- Third Thing -->
+    <h2>What else can JavaScript do?</h2>
+
+    <p>
+      JavaScript can change HTML attributes.
+    </p>
+    <p>
+      In this case JavaScript changes the src (source) attribute of an image.
+    </p>
+    <button
+    onclick="document.getElementById('myImage').src='pic_bulbon.gif'">
+    Turn on the light</button>
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px" />
+    <button
+    onclick="document.getElementById('myImage').src='pic_bulboff.gif'">
+    Turn off the light</button>
+
+    <hr />
+    <!-- Fourth Thing -->
+    <h2>More of That</h2>
+    <p id="demo3">
+      JavaScript can change the style of an HTML element.
+    </p>
+    <button type="button"
+    onclick="document.getElementById('demo3').style.fontSize='35px'">
+    Click Me!</button>
+
+  </body>
+</html>
