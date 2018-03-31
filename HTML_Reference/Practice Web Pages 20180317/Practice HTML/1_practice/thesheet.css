@@ -1,0 +1,72 @@
+/* 
+This is a practice CSS file 
+*/
+html {
+    background-color: darkkhaki;
+}
+
+h1 {
+    
+    font-size: 30;
+    color: blue;
+    font-family: serif;
+    text-align:center;
+}
+
+h2 {
+    
+    text-align:center;
+    color: darkgreen;
+    background-color: antiquewhite;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+aside {
+    display: block;
+    background-color: beige;
+    color: firebrick;
+    font-size: 200;
+}
+
+#firstSide {
+    float: right;
+    width: 35%;
+    border: 3px groove black;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 30px;
+}
+#secondSide {
+    float: left;
+    width: 35%;
+    border: 3px groove black;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#thirdSide {
+    float: right;
+    width: 35%;
+    height: 600px;
+    border: 3px groove black;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 30px;
+    background-image: url(12.jpg);
+}
+
+
+footer {
+    clear: both;
+    width: 100%;
+    background-color: #95a8ba;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    bottom: 0;
+    position: fixed;
+}

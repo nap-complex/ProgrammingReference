@@ -1,0 +1,274 @@
+<!-- this line is a comment.  it is visible in the source code but not rendered by the browser -->
+<!-- and apparently these can go before the doctype thing without an issue -->
+
+<!-- this is the required header line to tell the world this is an html file -->
+<!DOCTYPE html> 
+
+
+<!-- the following line brackets the whole code, that's my understanding so far -->
+<!-- this=> <html> is what you use if not using lang attribute, but use lang attribute
+because it helps screen readers and search engines, so I'm told by the internet -->
+<html lang="en-US">
+
+
+
+<!-- The header <head> contains meta information about the document -->
+<head>
+
+	<!-- the title appears in the browser tab -->
+	<title>Practice 1</title>
+	
+	<!-- this helps in redering, but not actually required -->
+	<meta charset="UTF-8">
+
+</head>
+
+
+
+
+<!-- the body contains the visible page content -->
+<body>
+
+	<h2 style="background-color:rgb(255,0,0)">Background-color set by using rgb(255,0,0)</h2>
+	<h2 style="background-color:rgb(0,255,0)">Background-color set by using rgb(0,255,0)</h2>
+	<h2 style="background-color:rgb(0,0,255)">Background-color set by using rgb(0,0,255)</h2>
+	<h2 style="background-color:rgb(255,255,0)">Background-color set by using rgb(255,255,0)</h2>
+	<h2 style="background-color:rgb(0,255,255)">Background-color set by using rgb(0,255,255)</h2>
+	<h2 style="background-color:rgb(255,0,255)">Background-color set by using rgb(255,0,255)</h2>
+	<h2 style="background-color:rgb(0,0,0)">Background-color set by using rgb(0,0,0)</h2>
+	<h2 style="background-color:rgb(90,90,90)">Background-color set by using rgb(90,90,90)</h2>
+	<h2 style="background-color:rgb(128,128,128)">Background-color set by using rgb(128,128,128)</h2>
+	<h2 style="background-color:rgb(200,200,200)">Background-color set by using rgb(200,200,200)</h2>
+	<h2 style="background-color:rgb(255,255,255)">Background-color set by using rgb(255,255,255)</h2>
+	
+	<hr>
+	
+	<h3 style="color:#ff0000">How to work colors with hex digits</h3>
+	<p style="color:#00ff00">You put a #sign before the digits in color:#xxxx then 6 digits
+	after that, with each pair calling out red blue green in hexidecimal, so this is #00ff00.</p>
+	<p style="color:#00ffff">And this is #00ffff, which is... this color.</p>
+	<h2 style="color:#ffffff; background-color:#000000;">This is background #000000 and text color
+	#ffffff.</h2>
+	
+	<hr>
+
+	<!-- h* are types of text.  I think calling the headers makes searches find them easier -->
+	<h1>The following are header examples:</h1>
+	<h1>This is h1 format</h1>
+	<h2>This is h2 format</h2>
+	<h3>This is h3 format</h3>
+	<h4>This is h4 format</h4>
+	<h5>This is h5 format</h5>
+	<h6>This is h6 format</h6>
+	<h7>This is h7 format ( apparently there isn't an h7 format, defaults to this )</h7>
+	
+	<hr>
+	
+	<!-- 
+	line breaks don't matter, all of the following get treated as continuous flows of words 
+	you can't write <p> in the samples like the next line, because that will act as a line break
+	anywhere you put it. 
+	-->
+	<p></p><p></p> <!-- makes a double space in the output -->
+	<!-- actually it didn't do that, and I don't know why. -->
+	
+	 
+	<h3>This is p practice</h3>	
+	<h3>This is <p> practice</h3>	
+	
+	<p>The p denotes a paragraph, which I assume is just a collection of words that the thing knows go together</p>
+	
+	<p>I wonder what p does if you add
+	line breaks for no apparent
+	reason? Clearly it does
+	not mater.  Keep that in mind.</p>
+	
+	<p>
+	And the p's might not need to be on the
+	same lines with the text.  See?
+	</p>
+	
+	<br>
+	<p>does <br> make a line break?</p>
+	<!-- yes it does, but it doesn't auto complete, so might not be kosher -->
+	
+	
+	
+	<!-- How to link to a website: -->
+	<!-- notice how there are 2 parts, the thing linked to on the left
+	and the linking text that will display in your document which is between
+	the > and <\a> -->
+	<p>This is how you link to a website with a text link:</p>
+	<a href="https://www.google.com">Click Here To Goolge!</a>
+	
+	
+	
+	<p>We need to find out what pagebreak is in html so we don't have to 
+	keep writing paragraphs just to seperate things</p>
+	
+	
+	
+	<h4>This is a picture from this folder followed by a pic from a sub-folder:</h4>
+	<!-- How to link a picture: ( and include a hover-over title ) -->
+	<!-- the alt attribute might be for screen readers to read -->
+	<img title="This is a picture" src="pic1.png" alt="pic2.jpg" width="400" height="300">
+	<!-- How to link to a picture in a different folder: -->
+	<img src="NF/pic2.jpg" alt="Why?" width="200" >
+	
+	
+	
+	<p>Insert an image from a web site:</p>
+	<p>This is linked from https://pfollansbee.files.wordpress.com/2017/05/new-box.jpg?w=768&h=471</p>
+	<img src="https://pfollansbee.files.wordpress.com/2017/05/new-box.jpg" alt="Carved Box" width="768" height="471">
+	
+	
+	
+	<br>
+	<h4>This is line 100!<h6>(an arbitrary point to help make sense of this web page)</h6></h4>
+	<!-- nesting these didn't change the way they are displayed... why not? -->
+	<h4>This is line 100!</h4>
+	<h6>(an arbitrary point to help make sense of this web page)</h6>
+	
+	<hr> <!-- this is like a page break but also include a visible line of the page -->
+	
+	<!-- this is a mess.  redo this when you learn about tables -->
+			<h3>The Poem Problem:</h3>
+			<p>
+			Attribute 	Description
+			alt 	Specifies an alternative text for an image, when the image cannot be displayed
+			disabled 	Specifies that an input element should be disabled
+			href 	Specifies the URL (web address) for a link
+			id 	Specifies a unique id for an element
+			src 	Specifies the URL (web address) for an image
+			style 	Specifies an inline CSS style for an element
+			title 	Specifies extra information about an element (displayed as a tool tip)
+			</p>
+
+			<br>
+			
+			<h3>To Fix the Poem Problem:</h3>
+			<h4>And to add a little color with the style attribute:</h4>
+			<pre style="background-color:powderblue;">
+			Attribute   	Description
+			alt         Specifies an alternative text for an image, when the image cannot be displayed
+			disabled    Specifies that an input element should be disabled
+			href        Specifies the URL (web address) for a link
+			id          Specifies a unique id for an element
+			src         Specifies the URL (web address) for an image
+			style       Specifies an inline CSS style for an element
+			title       Specifies extra information about an element (displayed as a tool tip)
+			</pre>
+			
+			
+			
+	<hr> <!-- and it's one of those tags that doesn't need a closing tag. -->
+
+
+	<!-- the title attribute here makes the little hover box over text.-->
+	<p title="I'm a tooltip">This is title practice.  Hover over this 
+	paragraph and see if you get the "I'm a tooltip" thing</p>
+
+	<hr>
+	
+	<p>And now for some color practice.</p>
+	<p style="color:blue;">This sentence should come out blue</p>
+	<h2 style="color:violet;">This is an other color, AND a header!</h2>
+	<h3 style="font-family:verdana;">What the hell is a 'verdana'?</h3>
+	<h3 style="font-family:courier; 
+					color:red; 
+					background-color:powderblue;
+					font-size:300%;
+					text-align:center;">
+					What happened here?</h3>
+	<p style="font-size:160%; text-align:center">What goes up must come down at font size 160%.</p>				
+	
+	<h4 style="color:blue; text-align:center">Here are some text modifiers you can use:</h4>
+	<pre>
+    b> - Bold text
+    strong> - Important text
+    i> - Italic text
+    em> - Emphasized text
+    mark> - Marked text
+    small> - Small text
+    del> - Deleted text
+    ins> - Inserted text
+    sub> - Subscript text
+    sup> - Superscript text
+   </pre>
+	<h4 style="color:blue; text-align:center">Here are some examples of using them:</h4>
+	<pre>
+	<b>What does bold text look like?</b>
+	<strong>How about strong text?</strong>
+	<i>And now for italic text</i>
+	<em>And then there's emphasized text</em>
+	<mark>I almost forgot to mark some text.</mark>
+	<small>Is this text small enough for you?</small>
+	<del>Does deleted text make any sense?</del>
+	<ins>Probably as much as inserted text</ins>
+	<sub>And now for subscript text</sub>
+	<sup>And finishing up with superscript text</sup>
+	
+	<h2>HTML <small>Small</small> Formatting</h2>
+	<h2>HTML <mark>Marked</mark> Formating</h2>
+	<p>This is <sub>subscripted</sub> text.</p>
+	<p>This is <sup>superscripted</sup> text.</p>
+	<p>Those are awfully big spaces between paragraphs...</p>
+
+	<h1>Quote Practice:</h1>
+	<p>The wildlife goal is to: <q>Not die and find food</q> said one of them.</p>
+	<p>Now for something called a block quote:</p>
+	<blockquote>
+	The animal went on to say that they were perfectly happy 
+	to not die at the hands of people while also not dying for other reasons
+	and that they would appreciate or cooperation on this matter.
+	</blockquote>
+
+	<blockquote cite="some place the quote came from">
+	This is the same quote but with the citation attribute that doesn't show up
+	but we should use it anyway, apparently.
+	The animal went on to say that they were perfectly happy 
+	to not die at the hands of people while also not dying for other reasons
+	and that they would appreciate or cooperation on this matter.
+	</blockquote>
+	
+	<p>The computer promises that <abbr title="Much Longer Name">shortName</abbr> will show up as a hover-able</p>
+
+	<h3>Seems address get something special also:</h3>
+	<address>
+	Written by some Animal<br>
+	You can see him at:<br>
+	Some website with animal pics:<br>
+	That is someplace.<br>
+	</address>
+	
+	<h3>This is getting a little tiring...</h3>
+	<p><cite>something gets cited</cite> by something else.  Done in 1882.</p>
+	
+	
+	<p>
+	It looks like a lot of the formatting stuff is not for viewing, but for 
+	carrying other information in a standardized way.  I wonder how many web
+	people really do that...?
+	</p>
+	
+	<h3>This next one is something called bdo, for Bi-Directional Override</h3>
+	<bdo dir="rtl">This text will be written from right to left</bdo>
+	<p>That was a little odd.</p>
+	
+	<pre>
+			Tag 	Description
+		abbr> 			Defines an abbreviation or acronym
+		address> 		Defines contact information for the author/owner of a document
+		bdo> 				Defines the text direction
+		blockquote> 	Defines a section that is quoted from another source
+		cite> 			Defines the title of a work
+		q> 				Defines a short inline quotation
+	</pre>
+	
+	
+	
+	
+</body>
+
+
+</html>

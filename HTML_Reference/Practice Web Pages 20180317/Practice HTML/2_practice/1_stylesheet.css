@@ -1,0 +1,27 @@
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+h2 {
+    color: darkgreen;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 12px;
+}
+
+footer {
+    text-align: center;
+    background-color: dodgerblue;
+    color: navajowhite;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

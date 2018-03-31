@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<link rel="stylesheet" href="styles.css">
+	<title>Practice Page 2</title>
+
+</head>
+
+
+
+<body>
+	
+	
+	<h1>This is the second web page practice html file.</h1>
+	
+	<h3 style="text-align: center">We will be starting with CSS stuff.</h3>
+	
+	<hr>
+		<p><img src="pic1.png" alt="not sure what this is" style="float:right;width:50px;height:25px;">
+		The image will float to the right of the text. Maybe I should put a whole lot more text
+		in since the image is real big, or at least would not be that easy to see if it was
+		the size of that little light bulb in the tutorial.</p>
+		
+		<p><img src="pic1.png" alt="not sure what this is" style="float:left;width:50px;height:25px;">
+		The image will float to the left of the text. Maybe I should put a whole lot more text
+		in since the image is real big, or at least would not be that easy to see if it was
+		the size of that little light bulb in the tutorial.</p>
+	<hr>
+	
+	<h2>This is a mapped picture.  Not sure what that is.  Play around and find out.</h2>
+	
+		<img src="pic1.png" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;">
+		
+		<map name="planetmap">
+		  <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+		  <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+		  <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+		</map>
+		
+		
+	<!-- ------------------------------------------------------------------------------------ -->
+	
+	<h2>This section is link practice!</h2>
+	
+	<!-- this is going to be a link to the first pactice html page we did: -->
+	<a href="1WebPagePractice.html">The first page! ( opens in same tab )</a>
+	
+	<br>
+	
+	<!-- an other way to format that link: -->
+	<a href="1WebPagePractice.html" target="_blank">The first page! ( opens in new tab )</a>
+	
+	<br>
+	
+	<!-- an other, not-understood, way to format that link: -->
+	<a href="1WebPagePractice.html" target="_top">The first page! ( breaks you out of a frame, whatever
+	that is )</a>
+	
+	<br>
+	
+	<p>The following image is also a link to that first web page.  Click it and see!</p>
+	<a href="1WebPagePractice.html">
+		<img src="pic1.png" alt="beach pic" style="width:150px;border:0;";>
+		</a>
+		
+	<br>
+	
+	<a href="#C4">Click to go to picture of sunset bookmark thing!</a>
+		
+	<!-- ------------------------------------------------------------------------------------ -->
+	
+		
+	<hr>
+	
+	<h2>I wonder if this will end up green...?</h2>
+	
+	<p>Why didn't h2 end up being green?  Oh, never mind, it's green now.  Now test the F5 to see if that
+	 reloads the webpage quickly in firefox.  Looks like it does.  Now fix the text color and move on
+	  to the next thing.</p>
+	
+	<h3>
+	You may have notice that h3 headers now automatically get a box around them.  Do not be alarmed.
+	This is a thing in the css style sheet connected with this web page.  Go on about your business. Except now 
+	to notice that it also has padding, as a new development.  It looks like margin is the space between
+	the outside of the box and the rest of the document and padding in the space between what is inside
+	the box and the border of the box.
+	</h3>
+	
+	<h3 id="p01">Of course, there are always exceptions.  Like this h3 header, id=p01</h3>
+	
+	<h3>Now this should be back to the regular h3 header type.  Is it?</h3>
+	
+	
+	<!-- this is the bookmarked image, I hope. -->
+	<p>This picture is here to give that bookmark near the top of the page something to link to.</p>
+	<a id="C4">
+	<img title="This is a picture for bookmark practice" src="NF/bk.jpg" alt="a picture of a sunset" style="width:600px;height:400px;">
+	</a>
+	
+	<!-- This is a GIF image displayed... maybe... -->
+	<!-- the tutorial says to use style attribute when displaying pictures so that no external style 
+	interferes with the way you want it displayed. -->
+	<img src="ww.gif" alt="animated woman walking picture" style="padding:50px;width:200px;height:300px;">	
+	
+	
+	<p>And now for something completely similar:</p>
+	<p class="error">I am different, because I used a class called error to style me.</p>
+	
+	
+	
+</body>
+
+</html>
