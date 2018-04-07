@@ -1,0 +1,22 @@
+body {
+  background: lightblue;
+}
+
+#first_h1 {
+  text-align: center;
+  color: darkblue;
+}
+
+#div_1 {
+  max-width: 850px;
+  border: 3px solid darkgreen;
+}
+
+#div_2 {
+  max-width: 100px;
+  border: 1px dashed black;
+}
+
+#p_1 {
+  float: right;
+}
