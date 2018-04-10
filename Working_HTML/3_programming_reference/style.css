@@ -1,0 +1,44 @@
+body {
+  background: lightblue;
+}
+
+h1 {
+  text-align: center;
+}
+
+#main_div {
+  border: solid black 2px;
+}
+
+#div_links {
+  border: solid black 2px;
+  border-radius: 9px;
+  width: 200px;
+  padding: 15px;
+  margin-left: 5px;
+}
+
+#page_list_uls {
+  list-style-type: none;
+}
+
+#first_a {
+  text-decoration: none;
+}
+
+#first_a:link {
+  text-decoration: none;
+}
+
+#first_a:visited {
+  font-weight: bold;
+}
+
+#first_a:active {
+  text-decoration: none;
+  color: red;
+}
+
+#first_a:hover {
+  font-weight: bold;
+}

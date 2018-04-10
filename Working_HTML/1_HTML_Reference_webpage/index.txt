@@ -28,26 +28,12 @@
           </p>
         </div>
 
+    </div>  <!-- end of div_suround -->
 
     <div id="div_4">
-
       <h2 id="first_h2">This is an attempt to load a text file into the webpage.</h2>
-
-      <p>
-        <iframe class="thing1" src="test.cpp"></iframe>
-      </p>
-
-      <p style="padding:0 40px">
-        It looks like there is no easy way to change the
-        text color in the iframe.  Once you get a little deeping
-        into javascript take an other look at that issue.
-      </p>
-
-      <p><iframe class="thing1" src="test.cpp.txt"></iframe></p>
-
+      <iframe src="random.txt"></iframe>
     </div>
-
-  </div>  <!-- end of div_suround -->
 
 
 

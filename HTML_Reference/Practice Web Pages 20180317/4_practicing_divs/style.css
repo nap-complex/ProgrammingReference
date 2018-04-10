@@ -1,0 +1,93 @@
+body {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  background: navy;
+}
+
+#large_middle_div {
+  max-width: 1400px;
+  height: auto;
+  background: lightgrey;
+  margin: 0px;
+  padding: 15px 15px;
+  border-top: solid darkblue 2px;
+  border-bottom: solid darkblue 2px;
+}
+
+#lmd {
+  text-align: center;
+}
+
+h2 {
+  color: blue;
+}
+
+header {
+  background-image: url("pic2.jpg");
+  font-size: 50px;
+  text-align: center;
+  max-width: 1430px;
+  height: auto;
+  margin-bottom: 0;
+  padding: 15px 0;
+  border-top: solid black 4px;
+}
+
+#box_1 {
+  background: rgb(235, 236, 239);
+  border: solid black 2px;
+  border-radius: 10px;
+  height: 150px;
+  width: 150px;
+  padding: 9px;
+  display: inline-flex;
+}
+
+#box_2 {
+  background: rgb(235, 236, 239);
+  border: solid black 2px;
+  border-radius: 10px;
+  height: 150px;
+  width: calc( 100% - 210px);
+  padding: 9px;
+  margin-left: 10px;
+  display: inline-flex;
+}
+
+#box_3 {
+  background: rgb(235, 236, 239);
+  border: solid black 2px;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 9px;
+}
+
+#box_4 {
+  background: rgb(235, 236, 239);
+  border: solid black 2px;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 9px;
+}
+
+.box_titles {
+  color: blue;
+  font-size: 25;
+}
+
+footer {
+  max-width: 1430px;
+  height: auto;
+  text-align: center;
+  color: #ffffff;
+  background-image: url("pic2.jpg");
+  font-size: 20px;
+  margin-top: 0;
+  padding: 3px 0;
+  border-bottom: solid black 9px;
+}
+
+#p_header {
+
+}
