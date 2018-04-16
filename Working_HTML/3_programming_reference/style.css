@@ -6,16 +6,35 @@ h1 {
   text-align: center;
 }
 
+#div_header {
+  width: 1000px;
+  text-align: center;
+}
+
 #main_div {
   border: solid black 2px;
+    display: inline-flex;
+    width: 1000px;
 }
 
 #div_links {
   border: solid black 2px;
   border-radius: 9px;
   width: 200px;
+  height: 250px;
   padding: 15px;
   margin-left: 5px;
+
+}
+
+#div_title {
+  border: solid black 2px;
+  border-radius: 9px;
+  width: calc(100%-200px);
+  height: 250px;
+  padding: 15px;
+  margin-left: 5px;
+
 }
 
 #page_list_uls {
