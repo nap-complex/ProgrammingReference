@@ -1,98 +1,119 @@
 <!DOCTYPE html>
-<!-- 
+<!--
 April 9, 2018
 temp file for use until python page really built
-reference: 
+reference:
 	https://www.w3schools.com/html/html_tables.asp
---> 
+-->
 
 <html>
 
 <head>
 	<style>
 		body {
+			margin-left: 40px;
 			background: lightgrey;
+			max-width: 900;
 		}
 		tr {
-			padding: 0 20px;
 			text-align: left;
+			border-bottom: 1px solid black;
 		}
 		th {
 			text-align: left;
-			padding: 0 20px;
+			border-bottom: 1px solid black;
 		}
 		table {
-			border-spacing: 5px;
-			background: lightblue;
+			margin: auto;
 		}
 		caption {
-			background: lightblue;
+			font-weight: bold;
+		}
+		.python_one_liners {
+			margin: 0 0 0 60px;
+		}
+		.button_1 {
+			background-color: lightblue;
+			border: solid 2px darkblue;
+			border-radius: 3px;
+			padding: 7px;
+			font-size: 15px;
+		}
+		.button_1:hover {
+			background-color: darkgreen;
+			color: lightgrey;
+			border: solid 2px pink;
+		}
+		header {
+		}
+		#header_h3 {
+			text-align: center;
+			display: inline-block;
+			margin-left: 80px;
 		}
 
 	</style>
+
 </head>
 
 <body>
-	<h3>This should be a table showing python operators</h3>
+
+	<header>
+		<button class="button_1"
+						type="button"
+						onclick="window.location.href='html_page.html'">
+						Go To Homepage
+		</button>
+		<h3 id="header_h3">Python Notes From Automate The Boring Stuff</h3>
+	</header>
+
 	<hr />
+	<br />
 
 	<table>
-		<caption>The Python Operators:</caption>
-		<tr>
-			<th>Operator</th>
-			<th>Operation</th>
-			<th>Example</th>
-			<th>Evaluates to...</th>
-		</tr>
-		
-		<tr>
-			<td>**</td>
-			<td>Exponent</td>
-			<td>2 ** 3</td>
-			<td>8</td>
-		</tr>
+		<caption>The Python Operators</caption>
+		<tr><th>Operator</th><th>Operation</th><th>Example</th><th>Evaluates to...</th></tr>
+		<tr><td>**</td><td>Exponent</td><td>2 ** 3</td><td>8</td></tr>
+		<tr><td>%</td><td>Modulus/remainder</td><td>22 % 8</td><td>6</td></tr>
+		<tr><td>//</td><td>Integer division/floored quotient</td><td>22 // 8</td><td>2</td></tr>
+		<tr><td>/</td><td>Division</td><td>22 / 8</td><td>2.75</td></tr>
+		<tr><td>*</td><td>Multiplication</td><td>3 * 5</td><td>15</td></tr>
+		<tr><td>-</td><td>Subtraction</td><td>5 - 2</td><td>3</td></tr>
+		<tr><td>+</td><td>Addition</td><td>2 + 2</td><td>4</td></tr>
+	</table>
 
-		<tr>
-			<td>%</td>
-			<td>Modulus/remainder</td>
-			<td>22 % 8</td>
-			<td>6</td>
-		</tr>
+	<br />
+	<br />
 
-		<tr>
-			<td>//</td>
-			<td>Integer division/floored quotient</td>
-			<td>22 // 8</td>
-			<td>2</td>
-		</tr>
+	<table>
+		<caption>Python: Common Data Types</caption>
+		<tr><th>Data Type</th><th>Examples</th></tr>
+		<tr><td>Integers</td><td>-2, -1, 0, 1, 2, 3, 4, 5</td></tr>
+		<tr><td>Floating-Point Numbers</td><td>-1.25, -1.0, -0.5, 0.0, 0.5, 1.0, 1.25</td></tr>
+		<tr><td>Strings</td><td>'a', 'aa', 'aaa', 'Hello!', '11 cats'	</td></tr>
+	</table>
 
-		<tr>
-			<td>/</td>
-			<td>Division</td>
-			<td>22 / 8</td>
-			<td>2.75</td>
-		</tr>
+	<br />
 
-		<tr>
-			<td>*</td>
-			<td>Multiplication</td>
-			<td>3 * 5</td>
-			<td>15</td>
-		</tr>
+	<h3>Strings</h3>
+	<p class="python_one_liners">
+		"bob" * 3 = "bobbobbob"
+	</p>
 
-		<tr>
-			<td>-</td>
-			<td>Subtraction</td>
-			<td>5 - 2</td>
-			<td>3</td>
-		</tr>
+	<h3>Variables</h3>
+	<ol>
+		<li>can only be one word</li>
+		<li>can only use letters, numbers, and underscore</li>
+		<li>can't begin with number</li>
+	</ol>
 
-		<tr>
-			<td>+</td>
-			<td>Addition</td>
-			<td>2 + 2</td>
-			<td>4</td>
-		</tr>
+	<h3>Formating Integer Output</h3>
+	<p class="python_one_liners">
+		print(12345678) => 12345678
+	</p>
+	<p class="python_one_liners">
+		print('{:,}'.format(12345678)) => 12,345,678
+	</p>
 </body>
 
 </html>
