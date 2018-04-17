@@ -11,7 +11,7 @@ reference:
 <head>
 	<style>
 		body {
-			margin-left: 40px;
+			margin: 0 40px;
 			background: lightgrey;
 			max-width: 900;
 		}
@@ -41,15 +41,19 @@ reference:
 		}
 		.button_1:hover {
 			background-color: darkgreen;
-			color: lightgrey;
+			color: #DCDCDC;
 			border: solid 2px pink;
 		}
 		header {
 		}
-		#header_h3 {
+		#header_h1 {
 			text-align: center;
 			display: inline-block;
-			margin-left: 80px;
+			padding-left: 30px;
+		}
+		#div_main {
+			padding: 10px;
+			background: #e8e8e8;
 		}
 
 	</style>
@@ -64,56 +68,78 @@ reference:
 						onclick="window.location.href='html_page.html'">
 						Go To Homepage
 		</button>
-		<h3 id="header_h3">Python Notes From Automate The Boring Stuff</h3>
+		<h1 id="header_h1">Python Notes From <span style="text-decoration: underline">Automate The Boring Stuff</span></h1>
 	</header>
 
 	<hr />
-	<br />
 
-	<table>
-		<caption>The Python Operators</caption>
-		<tr><th>Operator</th><th>Operation</th><th>Example</th><th>Evaluates to...</th></tr>
-		<tr><td>**</td><td>Exponent</td><td>2 ** 3</td><td>8</td></tr>
-		<tr><td>%</td><td>Modulus/remainder</td><td>22 % 8</td><td>6</td></tr>
-		<tr><td>//</td><td>Integer division/floored quotient</td><td>22 // 8</td><td>2</td></tr>
-		<tr><td>/</td><td>Division</td><td>22 / 8</td><td>2.75</td></tr>
-		<tr><td>*</td><td>Multiplication</td><td>3 * 5</td><td>15</td></tr>
-		<tr><td>-</td><td>Subtraction</td><td>5 - 2</td><td>3</td></tr>
-		<tr><td>+</td><td>Addition</td><td>2 + 2</td><td>4</td></tr>
-	</table>
+	<div style="background: #e8e8e8; padding: 10px;">
+		<table>
+			<caption>The Python Operators</caption>
+			<tr><th>Operator</th><th>Operation</th><th>Example</th><th>Evaluates to...</th></tr>
+			<tr><td>**</td><td>Exponent</td><td>2 ** 3</td><td>8</td></tr>
+			<tr><td>%</td><td>Modulus/remainder</td><td>22 % 8</td><td>6</td></tr>
+			<tr><td>//</td><td>Integer division/floored quotient</td><td>22 // 8</td><td>2</td></tr>
+			<tr><td>/</td><td>Division</td><td>22 / 8</td><td>2.75</td></tr>
+			<tr><td>*</td><td>Multiplication</td><td>3 * 5</td><td>15</td></tr>
+			<tr><td>-</td><td>Subtraction</td><td>5 - 2</td><td>3</td></tr>
+			<tr><td>+</td><td>Addition</td><td>2 + 2</td><td>4</td></tr>
+		</table>
+	</div>
 
-	<br />
-	<br />
+	<div style="background: #DCDCDC; padding: 10px;">
+		<table>
+			<caption>Python: Common Data Types</caption>
+			<tr><th>Data Type</th><th>Examples</th></tr>
+			<tr><td>Integers</td><td>-2, -1, 0, 1, 2, 3, 4, 5</td></tr>
+			<tr><td>Floating-Point Numbers</td><td>-1.25, -1.0, -0.5, 0.0, 0.5, 1.0, 1.25</td></tr>
+			<tr><td>Strings</td><td>'a', 'aa', 'aaa', 'Hello!', '11 cats'	</td></tr>
+		</table>
+	</div>
 
-	<table>
-		<caption>Python: Common Data Types</caption>
-		<tr><th>Data Type</th><th>Examples</th></tr>
-		<tr><td>Integers</td><td>-2, -1, 0, 1, 2, 3, 4, 5</td></tr>
-		<tr><td>Floating-Point Numbers</td><td>-1.25, -1.0, -0.5, 0.0, 0.5, 1.0, 1.25</td></tr>
-		<tr><td>Strings</td><td>'a', 'aa', 'aaa', 'Hello!', '11 cats'	</td></tr>
-	</table>
+	<div style="background: #e8e8e8; padding: 10px;">
+		<h3>Something Else Goes Here!</h3>
+	</div>
 
-	<br />
+	<div style="background: #DCDCDC; padding: 10px;">
+		<h3>Strings</h3>
+		<p class="python_one_liners">
+			"bob" * 3 = "bobbobbob"
+		</p>
+	</div>
 
-	<h3>Strings</h3>
-	<p class="python_one_liners">
-		"bob" * 3 = "bobbobbob"
-	</p>
-
-	<h3>Variables</h3>
-	<ol>
-		<li>can only be one word</li>
-		<li>can only use letters, numbers, and underscore</li>
-		<li>can't begin with number</li>
+	<div style="background: #e8e8e8; padding: 10px;">
+		<h3>Variables</h3>
+		<ol>
+			<li>can only be one word</li>
+			<li>can only use letters, numbers, and underscore</li>
+			<li>can't begin with number</li>
 	</ol>
+	</div>
 
-	<h3>Formating Integer Output</h3>
-	<p class="python_one_liners">
-		print(12345678) => 12345678
-	</p>
-	<p class="python_one_liners">
-		print('{:,}'.format(12345678)) => 12,345,678
-	</p>
+	<div style="background: #DCDCDC; padding: 10px;">
+		<h3>Formating Integer Output</h3>
+		<p class="python_one_liners">
+			print(12345678) => 12345678
+		</p>
+		<p class="python_one_liners">
+			print('{:,}'.format(12345678)) => 12,345,678
+		</p>
+	</div>
+
+	<div id="div_main">
+		<h3>This is good practice for main:</h3>
+		<pre>
+	def main():
+		some stuff here
+
+	if __name__ == "__main__":
+		main()
+			</pre>
+		<p style="display: inline-block">
+			some sort of explaination
+		</p>
+	</div>
 </body>
 
 
