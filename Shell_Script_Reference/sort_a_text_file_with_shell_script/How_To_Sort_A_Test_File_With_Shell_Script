@@ -1,0 +1,11 @@
+Dec 19, 2018  -  JLF
+
+Well, that couldn't have been much easier...
+
+from the command line do this:
+
+$ sort file_you_want_sorted >> where_you_want_the_sorted_information_dumped
+
+In out trials "sort" did not change the actual file but output the sorted contents of that file.
+
+We consider this a major victory for Linux.
