@@ -1,10 +1,14 @@
 Dec 19, 2018  -  JLF
+We learned this from: https://www.ibm.com/developerworks/community/blogs/58e72888-6340-46ac-b488-d31aa4058e9c/entry/linux_sort_command_sort_lines_of_text_files9?lang=en
+There's lot's more good stuff there about "sort"
+
 
 Well, that couldn't have been much easier...
-
 from the command line do this:
 
+
 $ sort file_you_want_sorted >> where_you_want_the_sorted_information_dumped
+
 
 In out trials "sort" did not change the actual file but output the sorted contents of that file.
 
