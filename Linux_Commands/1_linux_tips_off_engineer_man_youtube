@@ -1,0 +1,37 @@
+
+
+
+
+
+grabbed off youtube "engineer man" video called 8 super heroic Linux commnad that you probably aren't using"
+
+1. sudo !!, we knew that already
+
+2. open an editor to run a command: $ ctrl+e+x  [ this didn't work on my machine ]
+
+3. create a super fast ram disk:
+	mkdir -p /mnt/ram
+	mount -t tmpfs tmpfs /mnt/ram -o size=8192M
+
+4. don't add acommnad to history ( start with a leading space )
+	$  ls -l   // instead of 
+	$ ls -l
+
+5. fix a really long command that you messed up
+	$ fc
+	but in your case:
+	$ fc -e vim              { the -e command means "editor", I suspect, and this will use the vim editor for the command fix }
+
+6. tunnel ( local port 3337 -> remote hosts 127.0.0.1 on port 6379 )
+	ssh -L 337:127.0.0.1:6379 root@emkc.org -N
+
+7. quckly create folders 
+	mkdir -p folder/{sub1,sub2}/{sub1,sub2,sub3} 
+
+8. intercept stdout and log to file
+	cat file | tee -a log | cat > /dev/null
+
+9. exit terminal but leave all processes running
+	disown -a && exit
+
+

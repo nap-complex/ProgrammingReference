@@ -1,0 +1,23 @@
+------------------------
+
+// got this one off youtube channel "Gary Explains"
+
+at the prompt:
+
+$ file ./a.out
+
+this will give you information about the file
+
+------------------------
+
+$ head file.txt
+
+this will show you the first 10 (?) lines of that file
+
+$ head -20 file.txt
+
+this will show you the first 20 lines of a file
+
+------------------------
+
+
