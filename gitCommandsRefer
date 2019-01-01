@@ -23,7 +23,13 @@ git push
 
 git pull
 
+# ------------
+# other commands 
+
 git log
 
 git branch
 
+git checkout [branch name] - how to switch between branches
+
+git checkout -b [branch name] - might create a new branch
