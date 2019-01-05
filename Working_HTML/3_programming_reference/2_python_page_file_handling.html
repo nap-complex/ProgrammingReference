@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!--
+Jan 1, 2019
+assorted stuff for file handling
+This page was stolen straight from https://www.pythonforbeginners.com/cheatsheet/python-file-handling
+-->
+
+<html>
+
+<head>
+	<style>
+		body {
+			margin: 20px 40px;
+			background: lightgrey;
+			max-width: 900;
+		}
+		tr {
+			text-align: left;
+			border-bottom: 1px solid black;
+		}
+		th {
+			text-align: left;
+			border-bottom: 1px solid black;
+		}
+		table {
+			margin: auto;
+		}
+		caption {
+			font-weight: bold;
+		}
+		.python_one_liners {
+			margin: 0 0 0 60px;
+		}
+		.button_1 {
+			background-color: lightblue;
+			border: solid 2px darkblue;
+			border-radius: 3px;
+			padding: 7px;
+			font-size: 15px;
+		}
+		.button_1:hover {
+			background-color: darkgreen;
+			color: #DCDCDC;
+			border: solid 2px pink;
+		}
+		header {
+		}
+		#header_h1 {
+			color: darkblue;
+			font-family: Times;
+		}
+		#div_main {
+			padding: 10px;
+			background: #e8e8e8;
+		}
+		footer {
+			background: blue;
+			border: 2px solid white;
+			color: white;
+			padding: 20px;
+			text-align: center;
+		}
+		#divLeft {
+			border: 2px solid white;
+			padding: 15px;
+			float: left;
+			width: 45%;
+			background: lightblue;
+		}
+
+		#divRight {
+			float: right;
+			border: 2px solid white;
+			padding: 15px;
+			background: beige;
+		}
+
+
+	</style>
+
+</head>
+
+<body>
+
+	<header>
+		<button class="button_1"
+						type="button"
+						onclick="window.location.href='index.html'">
+						Go To Homepage
+		</button>
+		<h3 id="header_h1">The contents of this page were stolen straight from: https://www.pythonforbeginners.com/cheatsheet/python-file-handling</h3>
+		<h1>File Handling in Python</h1>
+	</header>
+
+	<hr />
+
+		<div id="divLeft">
+            <h2>File Handling</h2>
+<pre>
+File handling in Python requires no importing of modules. 
+</pre>
+
+<h2>File Object</h2>
+<pre>
+Instead we can use the built-in object "file". 
+
+That object provides basic functions and methods necessary to manipulate files
+by default. 
+
+Before you can read, append or write to a file, you will first have to open it using
+Python's built-in open() function. 
+
+In this post I will describe how to use the different methods of the file object. 
+</pre>
+
+<h2>Open()</h2>
+<pre>
+The open() function is used to open files in our system, the filename is the
+name of the file to be opened. 
+
+The mode indicates, how the file is going to be opened "r" for reading,
+"w" for writing and "a" for a appending. 
+
+The open function takes two arguments, the name of the file and and the mode
+for which we would like to open the file. 
+
+By default, when only the filename is passed, the open function opens the file
+in read mode.
+</pre>
+
+<h2>Example</h2>
+<pre>
+This small script, will open the (hello.txt) and print the content. 
+
+This will store the file information in the file object "filename".
+</pre>
+
+<pre class="prettyprint">
+filename = "hello.txt"
+file = open(filename, "r")
+for line in file:
+   print line,
+</pre>
+
+<h2>Read ()</h2>
+<pre>
+The read functions contains different methods, read(),readline() and readlines()
+
+read()		#return one big string
+
+readline	#return one line at a time
+
+readlines	#returns a list of lines
+</pre>
+
+<h2>Write ()</h2>
+<pre>
+This method writes a sequence of strings to the file.
+
+write ()	#Used to write a fixed sequence of characters to a file
+
+writelines()	#writelines can write a list of strings.
+</pre>
+
+<h2>Append ()</h2>
+<pre>
+The append function is used to append to the file instead of overwriting it.
+
+To append to an existing file, simply open the file in append mode ("a"):
+</pre>
+
+<h2>Close()</h2>
+<pre>
+When you're done with a file, use close() to close it and free up any system
+resources taken up by the open file
+</pre>
+		</div>
+
+		<div id="divRight">
+			<h2 style="text-align: center">File Handling Examples</h2>
+
+<pre>
+<strong>To open a text file, use:
+</strong>fh = open("hello.txt", "r")
+
+<strong>To read a text file, use:
+</strong>fh = open("hello.txt","r")
+print fh.read()
+
+<strong>To read one line at a time, use:
+</strong>fh = open("hello".txt", "r")
+print fh.readline()
+
+<strong>To read a list of lines use:
+</strong>fh = open("hello.txt.", "r")
+print fh.readlines()
+
+<strong>To write to a file, use:
+</strong>fh = open("hello.txt","w")
+write("Hello World")
+fh.close()
+
+<strong>To write to a file, use:
+</strong>fh = open("hello.txt", "w")
+lines_of_text = ["a line of text", "another line of text", "a third line"]
+fh.writelines(lines_of_text)
+fh.close()
+
+<strong>To append to file, use:
+</strong>fh = open("Hello.txt", "a")
+write("Hello World again")
+fh.close()
+
+<strong>To close a file, use
+</strong>fh = open("hello.txt", "r")
+print fh.read()
+fh.close()
+</pre>
+		</div>
+
+</body>
+
+
+
+
+</html>
+
+
