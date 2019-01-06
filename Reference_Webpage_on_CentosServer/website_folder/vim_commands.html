@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<!-- 
+20181216  -  JLF
+
+----------------------------------------------------------------
+------------------------- VIM SHEET 1 --------------------------
+----------------------------------------------------------------
+-->
+
+
+<html>
+	<title>This is stuff</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+<head>
+</head>
+
+
+<body>
+
+	<a href="index.html">Home Page</a>
+
+	<h1 style=text-align:center; >This is the Vim Tips page!</h1>
+	<hr/>
+
+	<h3> Basic move cursor commands </h3>
+
+	<ul>
+		<li><pre>k	up</pre></li>
+		<li><pre>j	down</pre></li>
+		<li><pre>h	left</pre></li>
+		<li><pre>l	right</pre></li>
+		<li><pre>gg	goto top of file</pre></li>
+		<li><pre>G	goto bottom of file</pre></li>
+		<li><pre>n%	move n% down in the file</pre></li>
+	</ul>
+ 
+	<h3> Moving in a Line </h3>
+
+	<ul>
+		<li><pre>0    move to beginning of line</pre></li>
+		<li><pre>$    move to end of line</pre></li>
+		<li><pre>^    move to first non blank character in line</pre></li>
+		<li><pre>g_   move to last non blank character in line</pre></li>
+		<li><pre>)    jump forward one sentence</pre></li>
+		<li><pre>(    jump backward one sentence</pre></li>
+		<li><pre>}    jump forward one paragraph</pre></li>
+		<li><pre>{    jump backward one paragraph</pre></li>
+	</ul>
+
+	<h3> High Middle Low </h3>
+
+	<ul>
+		<li><pre>H    goto top line of current screen</pre></li>
+		<li><pre>M    goto middle line of current screen</pre></li>
+		<li><pre>L    goto bottom line of current screen</pre></li>
+	</ul>
+
+	<h3> Move Current Line </h3>
+
+	<ul>
+		<li><pre>zt     moves current line to top of screen</pre></li>
+		<li><pre>zb     moves current line to bottom of screen</pre></li>
+		<li><pre>zz     moves current line to middle of screen</pre></li>
+	</ul>
+
+
+	<h3> Record Macro Thing </h3>
+
+	<ul>
+		<li><pre>press 'q' then a lower case letter as the label for the machro</pre></li>
+		<li><pre>press the key strokes to be recorded</pre></li>
+		<li><pre>press 'q' to end recording</pre></li>
+		<li><pre>press '@' and the label letter to run the macro</pre></li>
+	</ul>
+	 
+	<h3> Scrolling </h3>
+
+
+	<ul>
+		<li><pre><ctrl> e   scroll down without moving cursor </pre></li>
+		<li><pre><ctrl> y   scroll up without moving cursor </pre></li>
+		<li><pre><ctrl> d   moves screen down half</pre></li>
+		<li><pre><ctrl> u   moves screen up half</pre></li>
+		<li><pre><ctrl> f   moves screen down full</pre></li>
+		<li><pre><ctrl> b   moves screen up full</pre></li>
+	</ul>
+
+
+	<h3> Dealing With Words </h3>
+
+
+	<ul>
+		<li><pre>*   moves to the next occurence of the word under the curson</pre></li>
+		<li><pre>#   moves to the last occurence of the word under the curson</pre></li>
+		<li><pre>w   moves to the next word </pre></li>
+		<li><pre>e   moves to the end of the next word </pre></li>
+		<li><pre>b   moves to the beginning of the last word </pre></li>
+		<li><pre>W   moves to the next word ignoring syntax characters</pre></li>
+		<li><pre>E   moves to the end of the next word ignoring syntax characters</pre></li>
+		<li><pre>B   moves to the beginning of the last word ignoring syntax characters</pre></li>
+		<li><pre>dw  delete from here to end of word</pre></li>
+		<li><pre>dW  delete from here to end of word ignoring syntax characters</pre></li>
+		<li><pre>diw delete whole current word</pre></li>
+		<li><pre>diW delete whole current word ignoring syntax characters</pre></li>
+	</ul>
+
+	<h3> Book Marks </h3>
+
+
+	<ul>
+		<li><pre>m [ random letter ]  sets mark at this point</pre></li>
+		<li><pre>` [ random letter ]  got to mark set to random letter</pre></li>
+		<li><pre>Lower case in [ random letter ] will be file specific mark</pre></li>
+		<li><pre>Upper case in [ random letter ] can be accessed from outside file </pre></li>
+	</ul>
+
+	<h3> Delete From Here To There </h3>
+
+
+	<ul>
+		<li><pre>dt [ some character ]    deletes from here to [ some character ] not including that character</pre></li>
+		<li><pre>df [ some character ]    deletes from here to [ some character ] including that character</pre></li>
+		<li><pre>ct [ some character ]    ditto, but leaves cursor in insert mode</pre></li>
+		<li><pre>cf [ some character ]    ditto, but leaves cursor in insert mode</pre></li>
+	</ul>
+
+	<h3> Bracket Finder </h3>
+
+
+	<ul>
+		<li><pre>%   type % on a bracket thing and curor will jump to matching bracket thing</pre></li>
+	</ul>
+
+	<h3> Split Screen Stuff </h3>
+
+
+	<ul>
+		<li><pre>sp [ filename optional ]       split screen horizontally</pre></li>
+		<li><pre>vsplit  [ filename optional ]   split screen vertically</pre></li>
+		<li><pre>ctrl- w [ direction ]   move between screen splits</pre></li>
+		<li><pre>	j, k, etc</pre></li>
+	</ul>
+
+	<h3> Line Numbering </h3>
+
+	<ul>
+		<li><pre>set nu     turn on line numbers</pre></li>
+		<li><pre>set nonu   turn off line numbers</pre></li>
+		<li><pre>set rnu    turn on relative line numbers</pre></li>
+		<li><pre>set nornu  turn off relative line numbers</pre></li>
+	</ul>
+
+	<h3> Find and Stuff </h3>
+
+	<ul>
+		<li><pre>:noh    	gets rid of high-lighting after a search</pre></li>
+		<li><pre>/[search term] for searching</pre></li>
+	</ul>
+
+----------------------------------------------------------------
+----------------------------------------------------------------
+
+</body>
+
+</html>

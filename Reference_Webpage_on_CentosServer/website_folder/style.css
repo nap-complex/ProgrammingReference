@@ -1,0 +1,11 @@
+body {
+	background-color: lightgrey;
+	max-width: 900px;
+	margin: auto;
+}
+
+#first_h1 {
+	text-align: center;
+	color: darkblue;
+}
+
