@@ -1,0 +1,48 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: black;
+	color: white;
+	overflow: hidden;
+
+}
+
+#first_h1 {
+	text-align: center;
+	color: darkblue;
+}
+
+.container {
+ 	display: flex;
+	flex-direction: column;
+	background: url('img/page-bg.jpg') no-repeat center	center/cover; 
+	height: 100vh;
+	align-items: center:
+	justify-content: center;
+	text-align: center;
+
+}
+
+
+.animated {
+	font-family: 'Charm', cursive;
+	margin: 0;
+	padding: 0;
+	font-size: 6rem;
+	background: url('img/text-bg.png') no-repeat;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	animation: moveBg 90s linear infinite;
+	-webkit-animation: moveBg 90s linear infinite;
+}
+
+
+/* text background animation */
+@keyframes moveBg {
+	0% { 
+		background-position: 0% 30%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
+} 
