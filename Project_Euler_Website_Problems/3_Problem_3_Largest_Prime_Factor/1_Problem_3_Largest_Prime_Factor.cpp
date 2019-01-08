@@ -83,6 +83,8 @@ int main() {
 
 	// ----------------------------------------------------------------------------	
 
+	cout << "\nThis is the output from the C++ program";	
+
 	// display the factors found:
 	cout << "\nThe Prime Factors:";
 	if ( !wasItPrime ) {
