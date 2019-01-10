@@ -1,0 +1,10 @@
+Jan 9, 2019  -  JLF
+
+Random vim commands as we find them:
+
+
+:set list   // this causes the hidden characters to show, in case you need to damage control some eol things, etc
+
+:set nolist  // turns it off
+
+
