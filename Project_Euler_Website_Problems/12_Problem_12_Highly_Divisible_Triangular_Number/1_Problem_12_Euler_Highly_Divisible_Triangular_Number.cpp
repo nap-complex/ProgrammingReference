@@ -35,6 +35,24 @@ void makeLine(){
 
 // ---------------------------------------------------------------------
 
+int numOfDivisors(int thing){
+
+	int cnt1 = 1;
+	int i;
+	
+	for ( i=1; i<thing; i++) {
+		if ( thing%i == 0 ) { 
+			cnt1++; 
+//			cout << "\ni => " << i;
+//			cout << "  thing => " << thing;
+		} 
+	} // end of for
+
+//	cout << "\ncnt1 => " << cnt1;
+
+	return cnt1;
+
+} // end of numOfDivisors
 
 // ---------------------------------------------------------------------
 
@@ -44,9 +62,24 @@ void makeLine(){
 
 int main(){
 
+	int i;
+	int cnt1;
+	int triangleNumber;
+	int holder;
+
 	makeLine();
 
-cout << "do we have a program?";
+	cnt1 = 0;
+
+	i = 1;
+	while ( holder < 5 ) {
+		holder = numOfDivisors(i);
+		i++;
+		if ( cnt1 < holder ) { 
+			cnt1 = holder;
+			cout << "\ntriangleNumber => " << i << "  has numOfDivisors => " << holder;
+			}
+		}
 
 	makeLine();
 
