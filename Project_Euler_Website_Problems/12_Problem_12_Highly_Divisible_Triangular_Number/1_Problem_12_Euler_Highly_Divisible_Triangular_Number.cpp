@@ -57,29 +57,30 @@ int numOfDivisors(int thing){
 // ---------------------------------------------------------------------
 
 
-
 // ---------------------------------------------------------------------
 
 int main(){
 
-	int i;
-	int cnt1;
-	int triangleNumber;
-	int holder;
+	int iterator;
+	int markUpEr;
+	int numDivs;
 
 	makeLine();
 
-	cnt1 = 0;
+	iterator = 1;
+	markUpEr = 1;
 
-	i = 1;
-	while ( holder < 5 ) {
-		holder = numOfDivisors(i);
-		i++;
-		if ( cnt1 < holder ) { 
-			cnt1 = holder;
-			cout << "\ntriangleNumber => " << i << "  has numOfDivisors => " << holder;
-			}
+	while ( markUpEr < 100000000 ) {
+
+		if ( numDivs > 500 ) {
+			cout <<"\nThe first triangle number with more than 500 divisors is => " << markUpEr;
+			if ( numDivs > 500 ) { break; }
 		}
+		iterator++;
+		markUpEr = markUpEr + iterator;
+		numDivs = numOfDivisors(markUpEr);
+
+	} // end of while
 
 	makeLine();
 
