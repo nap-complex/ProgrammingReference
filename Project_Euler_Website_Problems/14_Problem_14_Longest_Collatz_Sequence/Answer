@@ -1,0 +1,23 @@
+
+
+---------------------------------------------------------------------------------------------------
+
+
+From a C++ program:
+winningNumber => 837799
+
+---------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+from a Python program:
+winningNumber =>  837799
+
+------------------------------------------------------------------------------------------------------------------------
+
+note: C++ took 0.522 seconds to do this, Python took 40.918 seconds to do it.
+
+*the times varied as much as 10 seconds on the Python re-runs.  I wonder why..., and writing the output to a 
+file takes less time than sending it to the screen.  Something funny going on around here
+

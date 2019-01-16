@@ -21,14 +21,11 @@ for lines in dataFile:
 	answer = answer + int(lines)
 	totalLines = totalLines + 1;
 
-#print("here is the answer from the python program:")
-#print("answer => ", answer)
-
-#print("totalLines => ", totalLines)
-numString = str(answer)
-#print("number length => ", len(numString)) 
-#print("number stringed => ", numString)
 print("-----------------------------------------------------------------------------")
+print("here is the answer from the python program:")
+
+numString = str(answer)
+
 print('The question was "what are the first ten digits," so ==>  ', end='')
 
 cnt = 0
