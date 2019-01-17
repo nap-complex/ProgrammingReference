@@ -1,0 +1,13 @@
+use vim to edit directory filenames:
+
+	install vidir
+	type $ vidir
+	edit and save
+
+
+change default editor:
+
+	$ sudo update-alternatives --config editor
+	follow instructions
+
+
