@@ -68,8 +68,30 @@ def upperLimit(thing):
                 
     return upperLimit, lowerLimit 
 
+# ----------------------------------------------------------------------------------------------------------
+def statsHalf(thing):
+	midPoint = 0
+	
+	var1 = 0
 
+	for var1 in thing:
+		list1 = thing
 
+	for var1 in list1:
+		if (len(var1)%2==0):
+			midPoint = len(var1)/2
+			print("midPoint => ", int(midPoint))
+		else:
+			midPoint = ( len(var1) - 1 )
+			midPoint = ( midPoint / 2 )
+			print("midPoint => ", int(midPoint))
+
+		print("??? => ", var1)
+		if ( int(midPoint) < len(var1) ):
+			print("var1[midPOint] => ", var1[int(midPoint)])
+
+	return midPoint
+# ----------------------------------------------------------------------------------------------------------
 # ----------------------------------------------------------------------------------------------------------
 def main():
 
@@ -82,6 +104,7 @@ def main():
     # so those are the only ones you have to check on the path down
     # There are 14 steps from top to bottom, they can be left or right in any order
     # LLLLLLLLLLLLLL
+    # LLLLLLLRRRRRRR - maybe that would be the appropriate one to use
     # RRRRRRRRRRRRRR
     # So, does that mean there are 2^14 paths? Yes, 16,384 of 'em
     # so, if you wanted to make a new language you could make 16384 words with just L's and R's
@@ -128,6 +151,9 @@ def main():
     for i in listOfList:
         print(i) 
 
+    print("")
+#    print(statsHalf(listOfList))
+    statsHalf(listOfList)
 
     makeLine()
 # ----------------------------------------------------------------------------------------------------------
