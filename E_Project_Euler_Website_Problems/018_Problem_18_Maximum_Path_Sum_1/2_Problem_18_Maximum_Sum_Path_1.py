@@ -48,11 +48,15 @@ def makeLine():
 
 # ----------------------------------------------------------------------------------------------------------
 def upperLimit(thing):
-
+    """ 
+    this function returns the value of the highest number in each row added together and the 
+    lowest value in each row added together.  This is done to give us a bound of where the answer
+    to the question will be 
+    """
+    
     upperLimit = 0
     lowerLimit = 0
 
-    print("how to get length thing => ", len(thing))
     for i in range(len(thing)):
         UL = 0
         LL = 99 
@@ -63,35 +67,9 @@ def upperLimit(thing):
                 LL=thing[i][x]
         upperLimit = upperLimit + UL
         lowerLimit = lowerLimit + LL
-
-
                 
     return upperLimit, lowerLimit 
 
-# ----------------------------------------------------------------------------------------------------------
-def statsHalf(thing):
-	midPoint = 0
-	
-	var1 = 0
-
-	for var1 in thing:
-		list1 = thing
-
-	for var1 in list1:
-		if (len(var1)%2==0):
-			midPoint = len(var1)/2
-			print("midPoint => ", int(midPoint))
-		else:
-			midPoint = ( len(var1) - 1 )
-			midPoint = ( midPoint / 2 )
-			print("midPoint => ", int(midPoint))
-
-		print("??? => ", var1)
-		if ( int(midPoint) < len(var1) ):
-			print("var1[midPOint] => ", var1[int(midPoint)])
-
-	return midPoint
-# ----------------------------------------------------------------------------------------------------------
 # ----------------------------------------------------------------------------------------------------------
 def main():
 
@@ -150,10 +128,6 @@ def main():
 
     for i in listOfList:
         print(i) 
-
-    print("")
-#    print(statsHalf(listOfList))
-    statsHalf(listOfList)
 
     makeLine()
 # ----------------------------------------------------------------------------------------------------------
