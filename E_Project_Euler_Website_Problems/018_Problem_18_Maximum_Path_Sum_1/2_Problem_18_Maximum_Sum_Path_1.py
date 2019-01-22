@@ -71,6 +71,14 @@ def upperLimit(thing):
     return upperLimit, lowerLimit 
 
 # ----------------------------------------------------------------------------------------------------------
+def practice(thing1):
+	print("")
+	print("This is from the practice function!")
+	print("")
+
+# ----------------------------------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------
 def main():
 
     makeLine()
@@ -124,10 +132,15 @@ def main():
     listOfList.append(list15)
 
 
-    print(upperLimit(listOfList))
+    thing4, thing5 = upperLimit(listOfList)
+
+    print("upper limit => ", thing4, "  lower limit => ", thing5)    
+    print("")
 
     for i in listOfList:
         print(i) 
+    
+    practice(listOfList)
 
     makeLine()
 # ----------------------------------------------------------------------------------------------------------
