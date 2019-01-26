@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 
 """
-Jan 17, 2019  -  JLF
+Jan 25, 2019  -  JLF
 
 Maximum path sum I
 Problem 18
@@ -45,57 +45,12 @@ def makeLine():
 	print("********************************************************************************************");
 	print("");
 	print("");
-
-# ----------------------------------------------------------------------------------------------------------
-def upperLimit(thing):
-    """ 
-    this function returns the value of the highest number in each row added together and the 
-    lowest value in each row added together.  This is done to give us a bound of where the answer
-    to the question will be 
-    """
-    
-    upperLimit = 0
-    lowerLimit = 0
-
-    for i in range(len(thing)):
-        UL = 0
-        LL = 99 
-        for x in range(len(thing[i])):
-            if thing[i][x]>UL:
-                UL=thing[i][x]
-            if thing[i][x]<LL:
-                LL=thing[i][x]
-        upperLimit = upperLimit + UL
-        lowerLimit = lowerLimit + LL
-                
-    return upperLimit, lowerLimit 
-
-# ----------------------------------------------------------------------------------------------------------
-def practice(thing1):
-	print("")
-	print("This is from the practice function!")
-	print("")
-
-# ----------------------------------------------------------------------------------------------------------
-# ----------------------------------------------------------------------------------------------------------
 # ----------------------------------------------------------------------------------------------------------
 def main():
 
     makeLine()
    
     listOfList = []
-
-    # NOTE!
-    # the number link to the line below by the index of the number and the index+1 of the number,
-    # so those are the only ones you have to check on the path down
-    # There are 14 steps from top to bottom, they can be left or right in any order
-    # LLLLLLLLLLLLLL
-    # LLLLLLLRRRRRRR - maybe that would be the appropriate one to use
-    # RRRRRRRRRRRRRR
-    # So, does that mean there are 2^14 paths? Yes, 16,384 of 'em
-    # so, if you wanted to make a new language you could make 16384 words with just L's and R's
-    # if each word was 16384 long... and many more if you used the shorter words too... I think you
-    # should get a dictionary and try that
 
     # make lists out of data:
     list1 = [75]
@@ -131,17 +86,24 @@ def main():
     listOfList.append(list14)
     listOfList.append(list15)
 
+# NOTE: the way this works => all you have to do: start at the second from last row, for each number
+# in that row add the number to it that is the larger of the two numbers adjacent to it in the row below it.  Move
+# up a row and do that again.  Repeat.  By the time you get to the top that one number in row 0 will be your 
+# answer.   This will not remember the path for you, but then, that wasn't the question
 
-    thing4, thing5 = upperLimit(listOfList)
+    row = 13
+    while row >= 0:
+        cols = len(listOfList[row])
+        for i in range(cols):
+            if ( listOfList[row+1][i] > listOfList[row+1][i+1] ):
+                listOfList[row][i] = listOfList[row][i] + listOfList[row+1][i]
+            else: 
+                listOfList[row][i] = listOfList[row][i] + listOfList[row+1][i+1]
 
-    print("upper limit => ", thing4, "  lower limit => ", thing5)    
-    print("")
+        row -= 1
 
-    for i in listOfList:
-        print(i) 
-    
-    practice(listOfList)
-
+    print("from a python3 program:")
+    print("and the answer is => ", listOfList[0][0])
     makeLine()
 # ----------------------------------------------------------------------------------------------------------
 main()
