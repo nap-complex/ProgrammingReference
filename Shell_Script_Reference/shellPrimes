@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# this is an attempt to make a prime number thing in a shell script
+
+echo ==========================================
+
+echo $((10 % 3))
+
+
+echo ==========================================
+
+i="3"
+stop="-1"
+
+while [ $stop -eq -1 ]
+do
+#	echo i = $i
+	i=$[$i+2]
+	if [ $i -le 10000 ] then stop="0" fi
+	if [ $(($i % 1000)) -eq 0 ] 
+		then echo "Something because i was $i"
+	fi
+done
+
+echo ==========================================

@@ -1,0 +1,10 @@
+//  This is a list of header types for scripts:
+
+
+// the following is the way to start a bash script
+#!/bin/bash
+
+// the following is the way to start a python script
+#!/usr/bin/env python
+
+
