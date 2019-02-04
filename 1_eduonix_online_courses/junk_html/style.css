@@ -1,0 +1,7 @@
+body {
+	max-width: 950;
+	margin: auto;
+	background: lightgrey;
+	padding: 10px;
+	border: 2px solid blue;
+}
