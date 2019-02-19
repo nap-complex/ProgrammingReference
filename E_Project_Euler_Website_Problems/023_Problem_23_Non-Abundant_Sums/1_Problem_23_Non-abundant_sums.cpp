@@ -1,5 +1,7 @@
 #include <iostream>
+#include <vector>
 using namespace std;
+
 /*
    Jan 27, 2019  -  JLF
 
@@ -45,20 +47,20 @@ int main(){
 
 	int testNumber;
 	int totalSumThing;
+	int abundantCount = 0;
+	vector <int> list1;
 	
-	cout << "nothing";
-	totalSumThing = 0;
-	
-	for ( testNumber = 1; testNumber < 28; testNumber++ ) {
-		cout << "something";
-//	for ( testNumber = 1; testNumber < 28123 + 1; testNumber++ ) {
-		if (!isItTheSumOf2AbundantNumbers(testNumber)){
-			cout << testNumber << ".";
-			totalSumThing = totalSumThing + testNumber;
-		} else cout << "not "; 
-	}
+	for ( testNumber = 1; testNumber<(28123+1); testNumber++ ) {
+		if ( isItAnAbundantNumber(testNumber)){
+			list1.push_back(testNumber);
+			abundantCount++;
+		} 
+	} 
+	for ( int i=0; i<list1.size(); i++) cout << list1[i] << " ";
 
-	cout << "\nSum of non-thing numbers => " << totalSumThing;
+	cout << "\n\n";
+
+	cout << "\ntotal abundant numbers in that range => " << abundantCount;
 
 	cout << "\n\n********************************************************\n";
 
@@ -94,25 +96,6 @@ bool isItAnAbundantNumber(int testNumber) {
 bool isItTheSumOf2AbundantNumbers(int testNumber) {
 
 	int an1, an2;
-
-	if ( testNumber < 12 ) return false;
-	if ( testNumber > 28123 ) return true;
-
-	for ( an1 = 12; an1 < (( 28123 / 2 ) + 1 ); an1++) {
-
-		if ( isItAnAbundantNumber(an1) ) {
-		for ( an2 = 12; an2 < (( 28123 / 2 ) + 1); an2++) {
-				
-			if ( isItAnAbundantNumber(an2) ) {
-				if ( an1 + an2 == testNumber ){
-				   	return true;
-					cout << ",";
-				}
-			}
-			
-			}
-			}
-	}
 
 	return false; 
 
