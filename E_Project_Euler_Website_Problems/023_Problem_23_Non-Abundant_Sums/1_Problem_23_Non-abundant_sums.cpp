@@ -21,18 +21,31 @@ using namespace std;
    of two abundant numbers is less than this limit.
 
    Find the sum of all the positive integers which cannot be written as the sum of two abundant numbers.
+
+   thinkin' =>
+
+   1. find the proper divisors of a number
+	a. 1 is always a proper divisor, so just start with that and then:
+	b. find the next proper devisor
+
 */
 
 // ---------------------------------------------------------------------------------------------------------
 
+// prototypes:
+int findNextProperDivisor(int currentDivisor, int testNumber);  // return next proper divisor
+bool isItAnAbundantNumber(int testNumber);
+
 // ---------------------------------------------------------------------------------------------------------
 
 int main(){
-
+ 
 	cout << "\n\n********************************************************\n";
 
-	cout << "\nDo we have a program?";
+	int testNumber = 12;
 
+	if ( isItAnAbundantNumber(testNumber) ) cout << "\nit was!";
+	else cout << "\nit weren't";
 
 
 
@@ -41,24 +54,49 @@ int main(){
 } // end of main
 
 // ---------------------------------------------------------------------------------------------------------
-// this function finds perfect numbers, probably
-int findPerfectNumbers(){
 
-		
-} 
+bool isItAnAbundantNumber(int testNumber) {
+
+	int cnt1;
+	int sumOfDivisors = 0;
+
+	cout << "\nAnd now, for some proper divisors: \n";
+
+	cnt1 = 1;
+	sumOfDivisors = sumOfDivisors + cnt1;
+
+	while ( true ) {
+		cnt1 = findNextProperDivisor(cnt1, testNumber);
+		if ( cnt1 == -1 ) break;
+		sumOfDivisors = sumOfDivisors + cnt1;
+	} // end of while
+	
+	if ( sumOfDivisors > testNumber ) return true;
+
+	return false;
+
+} // end of isItAnAbundantNumber
+
 // ---------------------------------------------------------------------------------------------------------
-// we need a program that finds factors, one at a time
-int findTheNextFactor(int numberToFacotr, int startingNumber) {
+
+int findNextProperDivisor(int currentDivisor, int testNumber) {
+
+	int maybeDivisor;
+	
+	maybeDivisor = currentDivisor + 1;
+
+	while ( maybeDivisor < ( testNumber / 2 ) + 1 ) {
+		if ( testNumber%maybeDivisor == 0 ) {
+			return maybeDivisor;
+		} 
+
+	} // end of while
+	
+	return -1;
+
+} // end of findNextProperDivisor
+	
 	
 
-
-}  // end of findTheNextFactor 
-// ---------------------------------------------------------------------------------------------------------
-// function to find prime factors
-// ---------------------------------------------------------------------------------------------------------
-// function to find prime numbers
 // ---------------------------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------------------
-// ---------------------------------------------------------------------------------------------------------
-
-
