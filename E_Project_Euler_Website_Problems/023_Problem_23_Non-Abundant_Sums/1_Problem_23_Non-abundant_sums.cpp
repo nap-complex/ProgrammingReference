@@ -37,7 +37,7 @@ using namespace std;
 // prototypes:
 bool isItAnAbundantNumber(int testNumber);
 int sumOfDivisors(int testNumber);
-bool isItTheSumOf2AbundantNumbers(int testNumber);
+bool isItTheSumOf2AbundantNumbers(int testNumber, vector<int> &list1);
 
 // ---------------------------------------------------------------------------------------------------------
 
@@ -49,18 +49,30 @@ int main(){
 	int totalSumThing;
 	int abundantCount = 0;
 	vector <int> list1;
-	
+
+	totalSumThing = 0;
+
 	for ( testNumber = 1; testNumber<(28123+1); testNumber++ ) {
+//	for ( testNumber = 1; testNumber<(300); testNumber++ ) {
 		if ( isItAnAbundantNumber(testNumber)){
 			list1.push_back(testNumber);
 			abundantCount++;
 		} 
 	} 
-	for ( int i=0; i<list1.size(); i++) cout << list1[i] << " ";
-
+	
+	for ( int cnt1 = 1; cnt1<list1.size(); cnt1++ ) cout << "." << list1[cnt1];
 	cout << "\n\n";
+	
+	for ( int i=0; i<list1.size(); i++) {
+		if ( isItTheSumOf2AbundantNumbers(i, list1) ) {
+			cout << ".";
+		} else {
+			totalSumThing = totalSumThing + i;
+			cout << ",";
+		} 	
+	}
 
-	cout << "\ntotal abundant numbers in that range => " << abundantCount;
+	cout << "\n" << totalSumThing;
 
 	cout << "\n\n********************************************************\n";
 
@@ -93,10 +105,18 @@ bool isItAnAbundantNumber(int testNumber) {
 
 // ---------------------------------------------------------------------------------------------------------
 
-bool isItTheSumOf2AbundantNumbers(int testNumber) {
+bool isItTheSumOf2AbundantNumbers(int testNumber, vector<int> &list1) {
 
-	int an1, an2;
+	int y;
+	int x;
 
+	for ( x=0; x < list1.size(); x++ ) {
+		for ( y=0; y < list1.size(); y++ ) { 
+			if ( list1[x] + list1[y] == testNumber ) {
+				return true;
+			}
+		}} // end of for's
+	
 	return false; 
 
 
