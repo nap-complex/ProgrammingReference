@@ -10,4 +10,5 @@ change default editor:
 	$ sudo update-alternatives --config editor
 	follow instructions
 
-
+$ echo $? <- type this on the command line after running a c++ program and it will show the 
+			"return 0" or whatever number the program returned

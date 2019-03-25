@@ -1,10 +1,11 @@
 #include <iostream>
 #include <stdlib.h>
+#include <string>
 using namespace std;
 
 
 // prototypes:
-void showInput();
+void showInput( int argc, char* argv[] );
 
 int main( int argc, char* argv[]) {
 
@@ -14,18 +15,20 @@ int main( int argc, char* argv[]) {
 	double ho_number = 0;
 	int i;
 	string s1;
+	string s2;
 
 
 
 	cout << "\n\n************************************************************************\n\n";
 
-	cout << "\nargc => " << argc;
+	showInput( argc, argv );	
 	
+	if ( argc == 1 ) cout << "\nNot enough arguments. :-)";
 
 	if ( argc > 1 ) {
 
-
-		if ( argv[1] == "-v" )
+		s2 = argv[1];
+		if ( s2 == "-v" )
 		{
 			cout << "\nThis is a converter program, version x";
 		}
@@ -58,7 +61,34 @@ int main( int argc, char* argv[]) {
 }
 
 // --------------------------------------------------------------------------------------------------
-void showInput();
+
+void showInput( int num1, char* array1[] ) 
+{
+	int i;
+	bool shouldWeShowIt = false;
+	string s1 = "-s";
+
+	for ( i = 0; i < num1; i++ ) 
+	{
+		if ( array1[i] == s1 ) 
+		{
+			shouldWeShowIt = true;
+			cout << "\nsomething was -s";
+		} 
+	}
+
+	// ******************
+//	shouldWeShowIt = true;
+
+	if ( shouldWeShowIt ) 
+	{
+		for ( i = 0; i < num1; i++ ) 
+		{
+			cout << "\narray1[" << i << "] => {" << array1[i] << "}";
+		}
+	}
+
+} // end of showInput
 
 // --------------------------------------------------------------------------------------------------
 // --------------------------------------------------------------------------------------------------
