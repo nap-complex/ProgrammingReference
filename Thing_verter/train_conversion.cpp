@@ -3,6 +3,8 @@
 using namespace std;
 
 
+// prototypes:
+void showInput();
 
 int main( int argc, char* argv[]) {
 
@@ -34,15 +36,31 @@ int main( int argc, char* argv[]) {
 			n_number = feet_number / 160;
 		
 			cout << "\nThis many real feet  => " << feet_number;
-			cout << "\nIs this many ho feet => " << ho_number;
-			cout << "\nIs this many n feet => " << n_number;
+
+			if ( ho_number >= 1 ) { 
+				cout << "\nWould be this size in HO Scale => " << ho_number << " feet";
+			} else {
+				ho_number = ( ho_number * 12 );
+				cout << "\nWould be this size in HO Scale => " << ho_number << " inches";
+			}
+
+			cout << "\nIs this many N feet => " << n_number;
 
 		}
 
 
-
-
+		} else {
+			cout << "\nI was expecting more from you.\n";
 		}
+
 		
 	cout << "\n\n************************************************************************\n\n";
-} 
+}
+
+// --------------------------------------------------------------------------------------------------
+void showInput();
+
+// --------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------
