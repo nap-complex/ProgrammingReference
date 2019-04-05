@@ -1,0 +1,11 @@
+This is random shell script stuff we ran into
+
+'---------------------------------
+
+$date
+shows the date
+
+$ date +%s
+shows the number of seconds since Jan 1, 1970
+
+
