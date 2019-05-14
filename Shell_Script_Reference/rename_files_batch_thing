@@ -1,0 +1,11 @@
+
+How to rename files recursively and stuff:
+
+# this finds all the " in a folder / file system and gets rid of them
+$ find -iname '*"*' -exec rename 's/"//' '{}' \+
+
+# this does the same but for the controlled character -> ?
+$ find -iname '*\?*' -exec rename 's/\?//' '{}' \+
+
+not sure about that escape character in front of the ?*'... look into that
+
