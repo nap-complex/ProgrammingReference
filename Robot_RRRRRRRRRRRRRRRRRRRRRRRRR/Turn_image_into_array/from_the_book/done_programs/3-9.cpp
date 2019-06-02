@@ -1,4 +1,4 @@
-// This program illustrates the prestandard c++ form of type casting.
+// This program illustrates the pre-standard c++ form of type casting.
 #include <iostream>
 using namespace std;
 
