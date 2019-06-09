@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<style>
+		.grid-container {
+			display: grid;
+			grid-template-columns: auto;
+			background-color: #2196F3;
+			padding: 10px;
+		}
+		.grid-item {
+			background-color: rgba(255, 255, 255, 0.8);
+			border: 1px solid rgba(0, 0, 0, 0.8);
+			padding: 20px;
+			font-size: 30px;
+			text-align: center;
+		}
+        pre {
+            text-align: left;
+        }
+		</style>
+	</head>
+
+	<body>
+		<h1>Case Statement with that Switch thing:</h1>
+	<div class="grid-container">
+        <div class="grid-item">
+            <pre>
+            char choice;
+
+            cin >> choice;
+
+            switch (choice)
+            {
+                case 'A': cout << "You entered A.\n"
+                    break;
+                case 'B': cout << "You entered B.\n"
+                    break;
+                case 'C': cout << "You entered C.\n"
+                    break;
+            }
+            default: cout << "You did not enter A, B, or C!\n";
+        </div>
+	</div>
+	</body>
+
+	
+</html>
