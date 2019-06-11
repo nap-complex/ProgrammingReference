@@ -1,0 +1,17 @@
+search words web server webpage html centos centosserver
+
+
+jlf - 20181219
+
+this is probably the wrong way to do this, but we are using the following to make
+SELINUX permissive so the web server on the local network works.
+
+You mission is to figure out how to permissible just the web server without changing anything else, later
+
+$ getenforce   // tells you the current state of SELINUX
+
+$ setenforce 0  // sets SELINUX to permissive
+
+$ setenforce 1  // sets SELINUX to enforcing
+
+
