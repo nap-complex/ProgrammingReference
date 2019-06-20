@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+		<style>
+		.grid-container {
+			display: grid;
+			grid-template-columns: auto;
+			background-color: #2196F3;
+			padding: 10px;
+		}
+		.grid-item {
+			background-color: rgba(255, 255, 255, 0.8);
+			border: 1px solid rgba(0, 0, 0, 0.8);
+			padding: 20px;
+			font-size: 30px;
+			text-align: center;
+		}
+        pre {
+            text-align: left;
+        }
+		</style>
+	</head>
+
+	<body>
+		<h1>Case Statement with that Switch thing:</h1>
+	<div class="grid-container">
+        <div class="grid-item">
+
+            <pre>
+            <p>The continue; statement causes the loop to stop for the current iteration, <br>but contiues the loop at the next iteration.<br>It's like break; but for one iteration only.</p>
+            
+        #include &ltiostream&gt
+        using namespace std;
+        
+        int main() {
+
+            cout &lt&lt "\n\n------------------------------------------------------\n";    
+            cout &lt&lt "\nLooping some numbers:\n";
+
+            for (int i=0; i&lt10; i++) 
+            {
+                cout &lt&lt "\ni =&gt "  i;
+            }
+
+            cout &lt&lt "\n\n------------------------------------------------------\n";    
+
+            cout &lt&lt "\nLooping some numbers with a continue statement to skip the mod 3's:\n";
+            for (int i=0; i&lt10; i++) 
+            {
+                if ( i % 3 == 0 ) continue;
+                cout &lt&lt "\ni =&gt " &lt&lt i;
+            }
+
+            cout &lt&lt "\n\n------------------------------------------------------\n\n";    
+
+        }
+
+
+        Output from the above program =&gt
+
+        ------------------------------------------------------
+
+        Looping some numbers:
+
+        i =&gt 0
+        i =&gt 1
+        i =&gt 2
+        i =&gt 3
+        i =&gt 4
+        i =&gt 5
+        i =&gt 6
+        i =&gt 7
+        i =&gt 8
+        i =&gt 9
+
+        ------------------------------------------------------
+
+        Looping some numbers with a continue statement to skip the mod 3's:
+
+        i =&gt 1
+        i =&gt 2
+        i =&gt 4
+        i =&gt 5
+        i =&gt 7
+        i =&gt 8
+
+        ------------------------------------------------------
+
+            </pre>
+            </div>
+	</div>
+	</body>
+
+	
+</html>
