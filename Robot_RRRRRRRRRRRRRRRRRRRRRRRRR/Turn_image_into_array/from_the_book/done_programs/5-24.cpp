@@ -1,3 +1,7 @@
+// This doesn't work they way the book predicts and I am not going to worry about 
+// making little changes to it to fix it.  Looks to me like a rewrite is needed
+
+
 // This program attemps to average 2 test scores for each 
 // student in a class.  However, it contains logic errors
 #include <iostream>
@@ -10,9 +14,9 @@ int main(){
     string name;                    // Student first name
 
     int count = 1,                  // Student counter
-        score,                      // An individual score read in
+        score = 0,                  // An individual score read in
         totalScore = 0;             // Total of a student's 2 scores
-    double average;                 // Average of a student's 2 scores
+    double average = 0.0;                 // Average of a student's 2 scores
 
     cout << fixed << showpoint << setprecision(1);
     cout << "Enter the first name of student " << count 
@@ -49,6 +53,8 @@ int main(){
         cout << "Enter the first name of student " << count++ 
             << " (or Q to quit): ";
         cin >> name;
+
+        totalScore = 0;
     }
 
     return 0;

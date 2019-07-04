@@ -1,0 +1,73 @@
+
+************************************************************
+
+startNum => 1,000,001
+maxTest  => 1,000,101
+
+
+Prime Number => 1,000,003
+Prime Number => 1,000,033
+Prime Number => 1,000,037
+Prime Number => 1,000,039
+Prime Number => 1,000,081
+Prime Number => 1,000,099
+
+************************************************************
+
+
+************************************************************
+
+startNum => 100,000,000,001
+maxTest  => 100,000,001,001
+
+
+Prime Number => 100,000,000,003
+Prime Number => 100,000,000,019
+Prime Number => 100,000,000,057
+Prime Number => 100,000,000,063
+Prime Number => 100,000,000,069
+Prime Number => 100,000,000,073
+Prime Number => 100,000,000,091
+Prime Number => 100,000,000,103
+Prime Number => 100,000,000,129
+Prime Number => 100,000,000,171
+Prime Number => 100,000,000,183
+Prime Number => 100,000,000,193
+Prime Number => 100,000,000,211
+Prime Number => 100,000,000,223
+Prime Number => 100,000,000,237
+Prime Number => 100,000,000,253
+Prime Number => 100,000,000,283
+Prime Number => 100,000,000,319
+Prime Number => 100,000,000,363
+Prime Number => 100,000,000,367
+Prime Number => 100,000,000,379
+Prime Number => 100,000,000,393
+Prime Number => 100,000,000,403
+Prime Number => 100,000,000,411
+Prime Number => 100,000,000,417
+Prime Number => 100,000,000,427
+Prime Number => 100,000,000,447
+Prime Number => 100,000,000,487
+Prime Number => 100,000,000,519
+Prime Number => 100,000,000,567
+Prime Number => 100,000,000,579
+Prime Number => 100,000,000,621
+Prime Number => 100,000,000,631
+Prime Number => 100,000,000,637
+Prime Number => 100,000,000,669
+Prime Number => 100,000,000,699
+Prime Number => 100,000,000,703
+Prime Number => 100,000,000,721
+Prime Number => 100,000,000,739
+Prime Number => 100,000,000,747
+Prime Number => 100,000,000,801
+Prime Number => 100,000,000,817
+Prime Number => 100,000,000,819
+Prime Number => 100,000,000,861
+Prime Number => 100,000,000,901
+Prime Number => 100,000,000,943
+Prime Number => 100,000,000,951
+
+************************************************************
+

@@ -32,12 +32,12 @@ def main():
 	makeLine()
 
 #	startNum = 3
-	startNum = 10000000000000000000
+	startNum = 1000000000000
 	if ( startNum % 2 == 0 ):
 		startNum += 1
 
+	maxTest = startNum + 100000
 #	maxTest = startNum + 100
-	maxTest = startNum + 1000
 
 	print('startNum => ' + '{:,}'.format(startNum))
 	print('maxTest  => ' + '{:,}'.format(maxTest))

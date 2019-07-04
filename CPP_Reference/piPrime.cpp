@@ -69,7 +69,7 @@ int i2;
 		
 	return true;
 
-} // end fo isPrimeTest
+} // end of isPrimeTest
 
 
 // ---------------------------------------------------------------
