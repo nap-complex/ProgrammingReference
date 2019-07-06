@@ -3,6 +3,7 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
+#include <cstdlib>                 // needed to use =>  system("clear");
 using namespace std;
 
 // Function prototypes
@@ -56,7 +57,12 @@ int main(){
 */
 void displayMenu(){
 
-//    system("cls");              // Clear the screen.  => gonna have to change this for linux
+//    system("cls");              // Clear the screen Windows style.  => gonna have to change this for linux
+
+//    system("clear");   // this needs => #include <cstdlib> 
+
+    cout << "\033[2J\033[1;1H";
+
     cout << "\n  Health Club Membership Menu\n\n";
     cout << "1.  Standard Adult Membership\n";
     cout << "2.  Child Membership\n";
