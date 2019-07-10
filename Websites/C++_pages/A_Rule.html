@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        background-color: #2196F3;
+        padding: 10px;
+    }
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+	<h1>Forcing Numbers</h1>
+	<div class="grid-container">
+		<div class="grid-item">
+		NOTE: Because floating-point constants are normally stored in memory as doubles, some compilers 
+		issue a warning message when you assign a floating-point constant to a float variable.  For example, if 
+		num is a float, the following statement might cause the compiler to generate a warning message:
+		</div>
+		<div class="grid-item">
+		num = 14.725;
+		</div>
+		<div class="grid-item">
+		You can suppress the error message by appending the f suffix to the floating-point constant,
+		as show here:
+		</div>
+		<div class="grid-item">
+		num = 14.725f;
+		</div>
+		<div class="grid-item">
+		If you want to force a value to be stored as a long double, append an L to it, as shown here: 
+		</div>
+		<div class="grid-item">
+		1034.56L
+		</div>
+	</div>
+
+    <hr/>
+	<h3>Remember, chars are integers:</h3>
+	<p>Characters are stored as integers, so if you "char A = 66" then A will hold 'B'</p>
+
+    <hr/>
+	<h3>static_cast, live it, learn it, love it:</h3>
+	<p>convert variable types by using:</p>
+	<p>int = static_cast<int>(double);</p>
+	<p>This puts the truncated value of double into int</p>
+
+    <hr/>
+    <h3>Clearing the terminal screen:</h3>
+    <p>You can use => system("clear");  which needs => #include &ltcstdlib&gt</p>
+    <p>For Windows => system("cls");</p>
+    <p> ... the internet doesn't think you should use system() for some reason, don't
+    know if they meant just for Windows, or Linux and Windows...</p>
+    <p>Maybe better => cout &lt&lt "\033[2J\033[1;1H"; ... not sure what that is, but it works.</p>
+    <p>or.. you can just => cout &lt&lt endl; a bunch, but this leaves your output at the bottome of the screen.</p>
+
+    <hr/>
+    <h3>Static local variable:</h3>
+    <p>static local variable is a local varible in a function that persists after the function closes,</p>
+    <p>and for the life of the program run.</p>
+    <p>=> static int num = 0;</p>
+
+
+    <hr/>
+
+</body>
+	
+</html>
