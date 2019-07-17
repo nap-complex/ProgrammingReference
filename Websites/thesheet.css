@@ -1,0 +1,31 @@
+body { 
+    width: 800px;
+    margin: auto;
+}
+.div1 {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 30%;
+    grid-gap: 3%;
+//    align-items: center;
+//    justify-items: center;
+    background: lightgrey;
+    border: solid lightblue 1px;
+    border-radius: 0px 0px 15px 15px;
+    padding: 20px;
+}
+header {
+    background: #251f66;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-bottom: solid black 5px; 
+    border-top: solid black 2px; 
+    border-radius: 15px 15px 0px 0px;
+}
+a {
+    display: grid;
+//    padding: 20px;
+//    margin: 20px;
+    place-items: center;
+}
