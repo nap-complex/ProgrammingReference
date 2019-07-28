@@ -3,7 +3,7 @@
 /*
    This won't run on the Linux machine so we ran it on the remote 
    Windows 10 machine in the garage.  It worked.  Now go see what 
-   it would take to make the out put happen with Linux.
+   it would take to make the output happen with Linux.
 */
 
 #include <iostream>
