@@ -1,11 +1,14 @@
 body { 
-    width: 800px;
+    width: 1000px;
     margin: auto;
 }
 .div1 {
     display: grid;
+    margin: auto auto;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 30% 30%;
+//    grid-template-rows: 20% 20% 20%;
+    grid-template-rows: 10% 10% 10%;
+
     grid-gap: 3%;
 //    align-items: center;
 //    justify-items: center;
@@ -23,6 +26,7 @@ header {
     border-top: solid black 2px; 
     border-radius: 15px 15px 0px 0px;
 }
+
 a {
     display: grid;
 //    padding: 20px;

@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+class NumberArray
+{
+    private:
+        double *aPtr;
+        int arraySize;
+    public:
+        NumberArray(int size, double value);
+        NumberArray(NumberArray &);
+        ~NumberArray() { if (arraySize > 0) delete [ ] aPtr; }
+        // Commented out to avoid problems with the
+        // default copy constructor
+        // void print() const;  
+        void print();
+        void setValue(double value);
+};
+

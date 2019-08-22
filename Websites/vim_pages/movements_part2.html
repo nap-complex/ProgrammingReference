@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+</head>
+
+<body style="width: 900px;
+            margin: auto;">
+
+    <h1 style="text-align: center;">Lots of movement commands for VIM   </h1>
+
+    <div style="border: solid black 3px; 
+                margin: 100;"><pre>
+
+        20181216  -  JLF
+
+        ----------------------------------------------------------------
+        ------------------------- VIM SHEET 1 --------------------------
+        ----------------------------------------------------------------
+
+        -- Basic move cursor commands ----------------------------------
+
+        k    up
+        j    down
+        h    left
+        l    right
+        gg   goto top of file
+        G    goto bottom of file
+        n%   move n% down in the file
+
+         
+        -- High Middle Low ---------------------------------------------
+
+        H    goto top line of current screen
+        M    goto middle line of current screen
+        L    goto bottom line of current screen
+
+
+        -- Move Current Line -------------------------------------------
+
+        zt     moves current line to top of screen
+        zb     moves current line to bottom of screen
+        zz     moves current line to middle of screen
+
+
+        -- Record Macro Thing ------------------------------------------
+
+        press 'q' then a lower case letter as the label for the machro
+        press the key strokes to be recorded
+        press 'q' to end recording
+        press '@' and the label letter to run the macro
+
+         
+        -- Scrolling ---------------------------------------------------
+
+        <ctrl> e   scroll down without moving cursor 
+        <ctrl> y   scroll up without moving cursor 
+        <ctrl> d   moves screen down half
+        <ctrl> u   moves screen up half
+        <ctrl> f   moves screen down full
+        <ctrl> b   moves screen up full
+
+
+        -- Moving in a Line --------------------------------------------
+
+        0    move to beginning of line
+        $    move to end of line
+        ^    move to first non blank character in line
+        g_   move to last non blank character in line
+
+
+        -- Dealing With Words ------------------------------------------
+
+        *   moves to the next occurence of the word under the curson
+        #   moves to the last occurence of the word under the curson
+        w   moves to the next word 
+        e   moves to the end of the next word 
+        b   moves to the beginning of the last word 
+        W   moves to the next word ignoring syntax characters
+        E   moves to the end of the next word ignoring syntax characters
+        B   moves to the beginning of the last word ignoring syntax characters
+        dw  delete from here to end of word
+        dW  delete from here to end of word ignoring syntax characters
+        diw delete whole current word
+        diW delete whole current word ignoring syntax characters
+
+        -- Book Marks --------------------------------------------------
+
+        m [ random letter ]  sets mark at this point
+        ` [ random letter ]  got to mark set to random letter
+        Lower case in [ random letter ] will be file specific mark
+        Upper case in [ random letter ] can be accessed from outside file 
+
+
+        -- Delete From Here To There -----------------------------------
+
+        dt [ some character ]    deletes from here to [ some character ] not including that character
+        df [ some character ]    deletes from here to [ some character ] including that character
+
+
+        -- Bracket Finder ----------------------------------------------
+
+        %   type % on a bracket thing and curor will jump to matching bracket thing
+
+
+        -- Split Screen Stuff ------------------------------------------
+
+        sp        split screen horizontally
+        vsplit    split screen vertically
+        <ctrl> w [ direction ]   move between screen splits
+                  j, k, etc
+
+
+          -- Line Numbering ----------------------------------------------
+
+          set nu     turn on line numbers
+          set nonu   turn off line numbers
+          set rnu    turn on relative line numbers
+          set nornu  turn off relative line numbers
+
+
+          -- Ruler At Bottom Of Window -----------------------------------
+
+          set ruler
+          set noruler
+        </pre></div>
+
+</body>
+
+</html>
