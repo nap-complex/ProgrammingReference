@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <title>VIM vertical insert</title>
+<style>
+    body { 
+        width: 800px;
+        border: solid lightblue 1px;
+        margin: auto;
+    }
+    .div1 {
+        background: lightgrey;
+        padding: 20px; 
+    }
+    header {
+        background: #251f66;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        border-bottom: solid black 5px; 
+        border-top: solid black 2px; 
+    }
+    .p1 {
+        font-size: 150%;
+    }
+
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>Stupid Comments BS</h1>
+    </header>
+    <div class="div1">
+        <h2>How to visually select one character on multiples lines:</h2>
+        <br/>
+        <h3>To remove comments:</h3>
+        <p>Put your cursor on the first # character, press &ltCtrl&gt V (or &ltCtrl&gt Q for gVim), and go down 
+        <br>until the last commented line and press x, that will delete all the # characters vertically.</p>
+        <h3>To add comments:</h3>
+        <p>1. First, go to the first line you want to comment, press &ltCtrl&gt V. This will put 
+        <br>the editor in the VISUAL BLOCK mode.
+                
+        <p>2. Then use the arrow key and select until the last line</p>
+                    
+        <p>3. Now press Shift I, which will put the editor in INSERT mode and then press #. This 
+        <br>will add a hash to the first line.</p>
+                        
+        <p>4. Then press Esc (give it a second), and it will insert a # character on all other selected lines.
+
+                        
+        <p>For the stripped-down version of vim shipped with debian/ubuntu by default, 
+        <br/>type : s/^/# in the third step instead.</p>
+        <br>
+
+        <h3>Credit:</h3>
+        <p>This was stolen verbatim-ish from:<br/>
+        https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim</p> 
+    </div>
+</body>
+
+</html>
+

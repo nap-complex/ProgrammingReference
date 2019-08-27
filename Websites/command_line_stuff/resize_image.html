@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Resize an Image</title>
+<style>
+    body { 
+        width: 800px;
+        border: solid lightblue 1px;
+        margin: auto;
+    }
+    .div1 {
+        background: lightgrey;
+        padding: 20px; 
+    }
+    header {
+        background: #251f66;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        border-bottom: solid black 5px; 
+        border-top: solid black 2px; 
+    }
+    .p1 {
+        font-size: 150%;
+    }
+
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>Info on imagemagick</h1>
+    </header>
+    <div class="div1">
+        <h2>How to resize an image:</h2>
+        <br/>
+        <p class="p1">$ convert image.png -resize 50% newImage.png</p>
+        <br>
+        <h2>How to flip (flop) an image:</h2>
+        <br/>
+        <p class="p1">$ convert image.png -flop newImage.png</p>
+        <br>
+        <br>
+        <br>
+        <p>Click on image to go to helpful website:</p>
+        <a href="https://imagemagick.org/script/convert.php">
+            <img src="ImageMagick_logo.svg.png" 
+                alt="https://imagemagick.org/script/convert.php"
+                style="border:solid black 2px">
+        </a>
+    </div>
+</body>
+
+</html>
+
