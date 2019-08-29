@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Rename Multiple Files</title>
+<style>
+    body { 
+        width: 800px;
+        border: solid lightblue 1px;
+        margin: auto;
+    }
+    .div1 {
+        background: lightgrey;
+        padding: 20px; 
+    }
+    header {
+        background: #251f66;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        border-bottom: solid black 5px; 
+        border-top: solid black 2px; 
+    }
+    .p1 {
+        font-size: 150%;
+    }
+
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>Rename Multiple Files</h1>
+    </header>
+    <div class="div1">
+        <h2>Append Something To Start of Multiple Files:</h2>
+        <br/>
+        <h3>One Line Version</h3>
+        <p class="p1">$ for f in *.jpg; do mv "$f" "test_$f"; done</p>
+        <br>
+        <h3>Multi Line Version</h3>
+        <p class="p1">$ for f in *.jpg</p>
+        <p class="p1">&gt do</p>
+        <p class="p1">&gt mv "$f" "test_$f"</p>
+        <p class="p1">&gt done</p>
+        <br>
+        <p class="p1">This will turn "001.jpg" into "test_001.jpg"</p>
+        <br/>
+        <h2>Rename using 'Rename'</h2>
+        <p class="p1">$ rename 's/replacee/replacer/g' *.jpg
+        <br/>
+    </div>
+</body>
+
+</html>
+

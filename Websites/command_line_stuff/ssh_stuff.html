@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Set Up SSH</title>
+<style>
+    body { 
+        width: 950px;
+        border: solid lightblue 1px;
+        margin: auto;
+    }
+    .div1 {
+        background: lightgrey;
+        padding: 20px; 
+    }
+    header {
+        background: #251f66;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        border-bottom: solid black 5px; 
+        border-top: solid black 2px; 
+    }
+    .p1 {
+        font-size: 150%;
+    }
+
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>SSH and Keys</h1>
+    </header>
+    <div class="div1">
+        <h2>On a New System with no KEYs:</h2>
+        <br/>
+        <p class="p1"></p>
+
+        <p>make a folder called ".ssh" in your home folder</p>
+
+        <p>cd to ".shh"</p>
+
+        <p>change the permissions to 700 for folder ".ssh"</p>
+
+        <p>make a note of the ip address of the computer you want to ".ssh" to</p>
+
+        <p>type "ssh-keygen -t rsa" to make a new key</p>
+
+        <p>enter a passphraase.  make it: "shouldidothis?"</p>
+
+        <p>private key is in "/home/b/.shh/id_rsa"</p>
+        <p>public key is in "/home/b/.ssh/id_rsa.pub"  ... I think</p>
+
+        <p>send the public key to the other computer with "ssh-copy-id &ltusername&gt@&lthost&gt"</p>
+        <p>in this case it will be "ssh-copy-id pi@raspberry"</p>
+        <br/>
+        <h2>If you already have the KEYs set up on your computer you can just do the: "ssh-copy-id &ltusername&gt@&lthost&gt" part.</h2>
+
+        <h2>In Summary =></h2>
+        <p>mkdir ~/.shh</p>
+        <p>chmod 700 ~/.ssh</p>
+        <p>ssh-keygen -t rsa</p>
+        <p>ssh-copy-id &ltusername&gt@&lthost&gt</p>
+        <br/>
+
+        <p>taken from: https://help.ubuntu.com/communit?SSH/OpenSSH/Keys</p>
+
+        <br>
+        <br>
+    </div>
+</body>
+
+</html>
+
